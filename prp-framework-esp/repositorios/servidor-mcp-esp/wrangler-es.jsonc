@@ -1,0 +1,132 @@
+/**
+ * CONFIGURACIÓN CLOUDFLARE WRANGLER PARA SERVIDOR MCP
+ * 
+ * Para más detalles sobre cómo configurar Wrangler, consulta:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ * 
+ * Esta configuración establece:
+ * - Servidor MCP con TypeScript
+ * - GitHub OAuth con KV storage
+ * - Base de datos PostgreSQL
+ * - Durable Objects para persistencia
+ * - Monitoreo y observabilidad
+ */
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	
+	// Nombre del Worker (cambiar por el nombre de tu servidor MCP)
+	"name": "mi-servidor-mcp",
+	
+	// Archivo principal de entrada TypeScript
+	"main": "src/index.ts",
+	
+	// Fecha de compatibilidad para APIs de Cloudflare Workers
+	"compatibility_date": "2025-03-10",
+	
+	// Flags de compatibilidad requeridos para Node.js APIs
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
+	
+	// Migraciones para Durable Objects (para actualizaciones de schema)
+	"migrations": [
+		{
+			"new_sqlite_classes": [
+				"MyMCP"
+			],
+			"tag": "v1"
+		}
+	],
+	
+	// Configuración de Durable Objects para persistencia de estado
+	"durable_objects": {
+		"bindings": [
+			{
+				"class_name": "MyMCP",
+				"name": "MCP_OBJECT"
+			}
+		]
+	},
+	
+	// Almacenamiento KV para sesiones OAuth y caché
+	"kv_namespaces": [
+		{
+			"binding": "OAUTH_KV",
+			"id": "06998ca39ffb4273a10747065041347b"
+		}
+	],
+	
+	// Binding para AI APIs de Cloudflare (opcional)
+	"ai": {
+		"binding": "AI"
+	},
+	
+	// Observabilidad y métricas habilitadas
+	"observability": {
+		"enabled": true
+	},
+	
+	// Configuración de desarrollo local
+	"dev": {
+		"port": 8792
+	}
+	
+	/**
+	 * CONFIGURACIONES ADICIONALES DISPONIBLES:
+	 */
+	
+	/**
+	 * Smart Placement - Optimización automática de ubicación geográfica
+	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
+	 */
+	// "placement": { "mode": "smart" },
+
+	/**
+	 * Bindings - Recursos de Cloudflare Developer Platform
+	 * Los bindings permiten a tu Worker interactuar con recursos como:
+	 * - Bases de datos
+	 * - Almacenamiento de objetos  
+	 * - Inferencia AI
+	 * - Comunicación en tiempo real
+	 * https://developers.cloudflare.com/workers/runtime-apis/bindings/
+	 */
+
+	/**
+	 * Variables de Entorno
+	 * https://developers.cloudflare.com/workers/wrangler/configuration/#environment-variables
+	 * 
+	 * Para el servidor MCP, configura:
+	 * - GITHUB_CLIENT_ID: ID de aplicación OAuth GitHub
+	 * - GITHUB_CLIENT_SECRET: Secret de aplicación OAuth GitHub (usar wrangler secret)
+	 * - DATABASE_URL: URL de conexión PostgreSQL (usar wrangler secret)
+	 * - JWT_SECRET: Secret para firmar tokens JWT (usar wrangler secret)
+	 */
+	// "vars": { 
+	//   "GITHUB_CLIENT_ID": "tu_github_client_id",
+	//   "ENVIRONMENT": "production"
+	// },
+	
+	/**
+	 * IMPORTANTE: Usa secrets para datos sensibles
+	 * 
+	 * Comandos para configurar secrets:
+	 * wrangler secret put GITHUB_CLIENT_SECRET
+	 * wrangler secret put DATABASE_URL  
+	 * wrangler secret put JWT_SECRET
+	 * 
+	 * https://developers.cloudflare.com/workers/configuration/secrets/
+	 */
+
+	/**
+	 * Activos Estáticos (opcional para UI del servidor MCP)
+	 * https://developers.cloudflare.com/workers/static-assets/binding/
+	 */
+	// "assets": { "directory": "./public/", "binding": "ASSETS" },
+
+	/**
+	 * Service Bindings - Comunicación entre múltiples Workers
+	 * Útil para arquitecturas de microservicios MCP
+	 * https://developers.cloudflare.com/workers/wrangler/configuration/#service-bindings
+	 */
+	// "services": [{ "binding": "MI_SERVICIO", "service": "mi-otro-worker" }]
+}

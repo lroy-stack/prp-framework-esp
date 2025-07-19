@@ -103,7 +103,7 @@ cd prp-framework-esp/
 python3 herramientas/sincronizador-versiones.py --status
 
 # 4. Ejecutar traducción con PRP
-/traducir-archivo-execute PRPs/traduccion-context-engineering-intro-completa.md --persona-scribe --think-hard
+/traducir-archivo-execute PRPs/traduccion-context-engineering-intro-completa --persona-scribe --think-hard
 
 # 5. Validar calidad
 /validar-terminologia --directorio repositorios/context-engineering-intro-esp/ --persona-qa
@@ -118,13 +118,13 @@ python3 herramientas/sincronizador-versiones.py --status
 2. **Ejecuta PRPs existentes**:
    ```bash
    # Context Engineering (46% completado)
-   /traducir-archivo-execute PRPs/traduccion-context-engineering-intro-completa.md --persona-scribe
+   /traducir-archivo-execute PRPs/traduccion-context-engineering-intro-completa --persona-scribe
    
    # PRPs Agentic (31% completado)
-   /traducir-archivo-execute PRPs/traduccion-prps-agentic-eng-completa.md --persona-scribe --think-hard
+   /traducir-archivo-execute PRPs/traduccion-prps-agentic-eng-completa --persona-scribe --think-hard
    
    # SuperClaude (0% - por comenzar)
-   /traducir-archivo-execute PRPs/traduccion-superclaude-framework-completa.md --persona-architect --seq
+   /traducir-archivo-execute PRPs/traduccion-superclaude-framework-completa --persona-architect --seq
    ```
 
 3. **Valida continuamente**:

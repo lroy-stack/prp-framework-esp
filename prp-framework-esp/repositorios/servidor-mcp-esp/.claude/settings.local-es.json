@@ -1,0 +1,25 @@
+{
+  "_comentarios": {
+    "descripcion": "Configuración local de permisos para Claude Code en el servidor MCP",
+    "proposito": "Define qué comandos bash están permitidos y denegados para operaciones seguras",
+    "uso": "Permite operaciones de desarrollo comunes mientras mantiene seguridad"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(mv:*)", 
+      "Bash(npm run type-check:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npm test)"
+    ],
+    "_allow_explicacion": [
+      "mkdir: Permite crear directorios necesarios para la estructura del proyecto",
+      "mv: Permite mover archivos durante reorganización de código",
+      "npm run type-check: Permite verificación de tipos TypeScript",
+      "npx tsc: Permite compilación directa de TypeScript",
+      "npm test: Permite ejecutar suite de pruebas"
+    ],
+    "deny": [],
+    "_deny_explicacion": "Lista vacía - no hay comandos específicamente denegados, solo los permitidos están habilitados"
+  }
+}

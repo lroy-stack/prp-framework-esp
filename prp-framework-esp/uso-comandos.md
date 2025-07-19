@@ -101,10 +101,10 @@ python3 SuperClaude install --help
 
 ```bash
 # Traducir archivo específico
-/traducir-archivo-execute PRPs/traduccion-readme-context-engineering.md --validar-inmediato
+/traducir-archivo-execute PRPs/traduccion-readme-context-engineering --validar-inmediato
 
 # Con backup y validación
-/traducir-archivo-execute PRPs/traduccion-servidor-mcp-completa.md --backup --persona-scribe
+/traducir-archivo-execute PRPs/traduccion-servidor-mcp-completa --backup --persona-scribe
 ```
 
 ### Comandos de Validación y Control
@@ -198,7 +198,7 @@ python3 herramientas/validador-terminologia.py --directorio repositorios/servido
 /status-traduccion
 
 # 2. Ejecutar traducción del PRP deseado con persona especializada
-/traducir-archivo-execute PRPs/traduccion-servidor-mcp-completa.md --prioridad alta --think-hard --persona-scribe
+/traducir-archivo-execute PRPs/traduccion-servidor-mcp-completa --prioridad alta --think-hard --persona-scribe
 
 # 3. Validar resultados con persona de QA
 /validar-terminologia --directorio repositorios/servidor-mcp-esp/ --persona-qa

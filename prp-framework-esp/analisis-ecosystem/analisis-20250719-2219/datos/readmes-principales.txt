@@ -1,0 +1,11 @@
+/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/README.md
+/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/PRPs/README.md
+/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/README.md
+/Users/lr0y/prp-completo-docs/img-docs/README.md
+/Users/lr0y/prp-completo-docs/prp-framework-esp/README.md
+/Users/lr0y/prp-completo-docs/Context-Engineering-Intro/README.md
+/Users/lr0y/prp-completo-docs/Context-Engineering-Intro/use-cases/mcp-server/README.md
+/Users/lr0y/prp-completo-docs/Context-Engineering-Intro/use-cases/mcp-server/PRPs/README.md
+/Users/lr0y/prp-completo-docs/README.md
+/Users/lr0y/prp-completo-docs/mcp-crawl4ai-rag/README.md
+/Users/lr0y/prp-completo-docs/local-ai-packaged/README.md
