@@ -1,0 +1,8 @@
+total 16
+drwxr-xr-x@  7 lr0y  staff   224 Jul 19 20:32 .
+drwxr-xr-x@ 18 lr0y  staff   576 Jul 19 21:45 ..
+-rw-r--r--@  1 lr0y  staff  6148 Jul 19 18:43 .DS_Store
+drwxr-xr-x@  9 lr0y  staff   288 Jul 19 17:33 context-engineering-intro-esp
+drwxr-xr-x@ 11 lr0y  staff   352 Jul 19 18:43 prps-agentic-eng-esp
+drwxr-xr-x@ 10 lr0y  staff   320 Jul 19 21:11 servidor-mcp-esp
+drwxr-xr-x@  2 lr0y  staff    64 Jul 19 16:34 superclaude-framework-esp

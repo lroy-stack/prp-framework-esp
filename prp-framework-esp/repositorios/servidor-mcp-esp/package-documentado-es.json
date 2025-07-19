@@ -1,0 +1,109 @@
+{
+  "name": "remote-mcp-github-oauth",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "// deploy": "Despliega el Worker a Cloudflare en producción",
+    
+    "dev": "wrangler dev",
+    "// dev": "Inicia servidor de desarrollo local en puerto 8792",
+    
+    "start": "wrangler dev",
+    "// start": "Alias para 'dev' - inicia servidor desarrollo",
+    
+    "cf-typegen": "wrangler types",
+    "// cf-typegen": "Genera tipos TypeScript desde configuración Worker",
+    
+    "type-check": "tsc --noEmit",
+    "// type-check": "Verifica tipos TypeScript sin generar archivos JS",
+    
+    "test": "vitest",
+    "// test": "Ejecuta tests unitarios en modo watch",
+    
+    "test:ui": "vitest --ui",
+    "// test:ui": "Ejecuta tests con interfaz web visual",
+    
+    "test:run": "vitest run",
+    "// test:run": "Ejecuta tests una vez (modo CI)"
+  },
+  "dependencies": {
+    "@cloudflare/workers-oauth-provider": "^0.0.5",
+    "// @cloudflare/workers-oauth-provider": "Proveedor OAuth oficial Cloudflare para Workers",
+    
+    "@modelcontextprotocol/sdk": "1.13.1",
+    "// @modelcontextprotocol/sdk": "SDK oficial Model Context Protocol para TypeScript",
+    
+    "@sentry/cloudflare": "^9.16.0",
+    "// @sentry/cloudflare": "Cliente Sentry para monitoreo errores en Cloudflare Workers",
+    
+    "agents": "^0.0.100",
+    "// agents": "Framework agentes MCP para Cloudflare Workers",
+    
+    "hono": "^4.8.3",
+    "// hono": "Framework web ultrarrápido para Edge Computing",
+    
+    "just-pick": "^4.2.0",
+    "// just-pick": "Utilidad para seleccionar propiedades específicas de objetos",
+    
+    "octokit": "^5.0.3",
+    "// octokit": "Cliente oficial GitHub API para JavaScript/TypeScript",
+    
+    "postgres": "^3.4.5",
+    "// postgres": "Cliente PostgreSQL rápido con pool de conexiones",
+    
+    "workers-mcp": "^0.0.13",
+    "// workers-mcp": "Transporte MCP específico para Cloudflare Workers",
+    
+    "zod": "^3.25.67",
+    "// zod": "Librería validación esquemas TypeScript-first"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.8.53",
+    "// @cloudflare/vitest-pool-workers": "Pool workers Vitest para testing Cloudflare Workers",
+    
+    "@types/node": "^24.0.10",
+    "// @types/node": "Definiciones tipos TypeScript para Node.js",
+    
+    "@vitest/ui": "^3.2.4",
+    "// @vitest/ui": "Interfaz web para Vitest testing framework",
+    
+    "prettier": "^3.6.2",
+    "// prettier": "Formateador código opinionado para consistencia estilo",
+    
+    "typescript": "^5.8.3",
+    "// typescript": "Compilador TypeScript para desarrollo type-safe",
+    
+    "vi-fetch": "^0.8.0",
+    "// vi-fetch": "Mock fetch API para testing con Vitest",
+    
+    "vitest": "^3.2.4",
+    "// vitest": "Framework testing unitario ultrarrápido powered by Vite",
+    
+    "wrangler": "^4.23.0",
+    "// wrangler": "CLI oficial Cloudflare Workers para desarrollo y despliegue"
+  },
+  
+  "// COMANDOS_PRINCIPALES": {
+    "desarrollo": "npm run dev - Inicia servidor desarrollo local",
+    "testing": "npm run test - Ejecuta tests en modo watch",
+    "verificacion_tipos": "npm run type-check - Verifica tipos TypeScript",
+    "despliegue": "npm run deploy - Despliega a producción Cloudflare"
+  },
+  
+  "// DEPENDENCIAS_CLAVE": {
+    "mcp_core": "@modelcontextprotocol/sdk + workers-mcp + agents",
+    "oauth": "@cloudflare/workers-oauth-provider + octokit",
+    "base_datos": "postgres + zod",
+    "monitoreo": "@sentry/cloudflare",
+    "desarrollo": "wrangler + typescript + vitest"
+  },
+  
+  "// PREREQUISITOS": {
+    "node_version": ">=18.0.0",
+    "cloudflare_account": "Requerido para despliegue",
+    "github_oauth_app": "Requerido para autenticación",
+    "postgresql_db": "Requerido para operaciones base datos"
+  }
+}

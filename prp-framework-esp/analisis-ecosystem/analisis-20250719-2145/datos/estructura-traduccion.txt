@@ -1,0 +1,19 @@
+total 88
+drwxr-xr-x@ 18 lr0y  staff    576 Jul 19 21:45 .
+drwx------@ 13 lr0y  staff    416 Jul 19 21:35 ..
+drwxr-xr-x@  4 lr0y  staff    128 Jul 19 20:46 .claude
+-rw-r--r--@  1 lr0y  staff   6148 Jul 19 18:12 .DS_Store
+drwxr-xr-x@  3 lr0y  staff     96 Jul 19 21:45 analisis-ecosystem
+-rw-r--r--@  1 lr0y  staff  11475 Jul 19 21:26 CLAUDE.md
+drwxr-xr-x@  5 lr0y  staff    160 Jul 19 16:36 configuracion
+drwxr-xr-x@  3 lr0y  staff     96 Jul 19 16:32 documentacion
+drwxr-xr-x@  3 lr0y  staff     96 Jul 19 16:31 flujos-trabajo
+drwxr-xr-x@  5 lr0y  staff    160 Jul 19 16:37 herramientas
+drwxr-xr-x@  6 lr0y  staff    192 Jul 19 16:54 informes-ejecutivos
+drwxr-xr-x@  4 lr0y  staff    128 Jul 19 16:40 metadatos
+drwxr-xr-x@  6 lr0y  staff    192 Jul 19 20:55 PRPs
+-rw-r--r--@  1 lr0y  staff  11986 Jul 19 21:33 README.md
+drwxr-xr-x@  5 lr0y  staff    160 Jul 19 17:34 reportes
+drwxr-xr-x@  7 lr0y  staff    224 Jul 19 20:32 repositorios
+drwxr-xr-x@  7 lr0y  staff    224 Jul 19 21:09 temporal
+-rw-r--r--@  1 lr0y  staff  10743 Jul 19 21:23 uso-comandos.md

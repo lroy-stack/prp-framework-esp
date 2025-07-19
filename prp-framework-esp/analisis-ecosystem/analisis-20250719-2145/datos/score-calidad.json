@@ -1,0 +1,21 @@
+{
+  "fecha_evaluacion": "2025-07-19T21:48:21.920893",
+  "score_total": 6.35,
+  "score_maximo": 10.0,
+  "porcentaje": 63.5,
+  "componentes": {
+    "documentacion_principal": 2.0,
+    "progreso_traducciones": 0.25,
+    "consistencia_terminologica": 1.0,
+    "estructura_prps": 1.5,
+    "herramientas_funcionales": 1.0,
+    "sincronizacion_actualizada": 0.6
+  },
+  "umbral_github": 9.5,
+  "apto_para_push": false,
+  "areas_mejora": [
+    "Acelerar progreso de traducciones",
+    "Mejorar consistencia terminológica",
+    "Actualizar sincronización con repositorios padre"
+  ]
+}

@@ -1,0 +1,4 @@
+Context-Engineering-Intro: 11 archivos pendientes
+PRPs-agentic-eng: 42 archivos pendientes
+SuperClaude-Framework: 38 archivos pendientes
+Servidor-MCP: 30 archivos pendientes

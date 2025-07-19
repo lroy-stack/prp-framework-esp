@@ -1,382 +1,355 @@
-# 📋 Manual de Uso - Sistema de Traducción PRP Framework
+# 🎯 Guía de Comandos - Sistema de Traducción PRP Framework
 
-## 🎯 Introducción
+## 🚀 Instalación de SuperClaude (Prerequisito)
 
-Este manual proporciona una guía completa para utilizar el sistema de traducción automatizado del PRP Framework. El sistema permite traducir de manera sistemática y con control de calidad los tres repositorios principales del ecosistema PRP.
+### Opción 1: Desde Código Fuente con Git Clone (MÁS FÁCIL) ⭐
+```bash
+# Clonar repositorio
+git clone https://github.com/NomenAK/SuperClaude.git
+cd SuperClaude
 
-## 🏗️ Arquitectura del Sistema
+# Instalar con uv (recomendado)
+uv sync
 
-### Componentes Principales
+# O con pip tradicional
+pip install -e .
 
+# Ejecutar instalador (cualquiera de estos comandos funciona)
+python3 SuperClaude install              # Más directo
+python3 -m SuperClaude install           # Alternativa modular
+SuperClaude install                      # Si está en PATH
 ```
-prp-framework-esp/
-├── herramientas/          # Scripts de automatización
-├── configuracion/         # Configuración del sistema
-├── repositorios/          # Contenido traducido
-├── PRPs/                  # Product Requirement Prompts
-├── metadatos/            # Estado y métricas
-└── flujos-trabajo/       # Procesos documentados
+
+### Opción 2: Desde PyPI (Instalación Global)
+```bash
+# Con uv (moderno y rápido)
+uv add SuperClaude
+
+# O con pip tradicional
+pip install SuperClaude
+
+# Ejecutar instalador
+python3 -m SuperClaude install
 ```
 
-### Flujo de Trabajo General
+### Opción 3: Instalación por Proyecto
+```bash
+# Crear entorno virtual
+uv venv
+source .venv/bin/activate
 
-1. **Preparación** → Configurar entorno y sincronizar
-2. **Análisis** → Identificar contenido a traducir
-3. **Traducción** → Proceso sistemático con validación
-4. **Validación** → Control de calidad automatizado
-5. **Publicación** → Actualizar métricas y estado
+# Instalar SuperClaude
+uv pip install SuperClaude
 
-## 🛠️ Comandos Disponibles
+# Ejecutar instalador
+python3 -m SuperClaude install
+```
 
-### 1. Sincronización de Repositorios
+### Opciones del Instalador
+```bash
+# Instalación rápida (recomendada)
+python3 SuperClaude install
 
-#### `python3 herramientas/sincronizador-versiones.py`
+# Selección interactiva de componentes
+python3 SuperClaude install --interactive
 
-**Propósito**: Sincronizar con repositorios originales y gestionar versiones.
+# Instalación mínima (solo framework core)
+python3 SuperClaude install --minimal
+
+# Perfil desarrollador (todo incluido)
+python3 SuperClaude install --profile developer
+
+# Ver todas las opciones
+python3 SuperClaude install --help
+```
+
+## 🎭 Personas de SuperClaude Disponibles
+
+### Personas de Desarrollo
+- **`--persona-frontend`**: UI/UX, accesibilidad, componentes React/Vue
+- **`--persona-backend`**: APIs, bases de datos, arquitectura servidor
+- **`--persona-architect`**: Diseño sistemas, escalabilidad, decisiones arquitectónicas
+
+### Personas de Calidad
+- **`--persona-analyzer`**: Análisis causa raíz, debugging, investigación
+- **`--persona-security`**: Auditorías seguridad, vulnerabilidades, OWASP
+- **`--persona-qa`**: Testing, casos extremos, cobertura de pruebas
+- **`--persona-performance`**: Optimización, profiling, métricas
+
+### Personas de Mejora
+- **`--persona-refactorer`**: Calidad código, deuda técnica, clean code
+- **`--persona-mentor`**: Documentación, tutoriales, transferencia conocimiento
+- **`--persona-scribe`**: Documentación técnica especializada (ideal para traducciones)
+
+## 📋 Comandos Slash Disponibles
+
+### Comandos de Ejecución de Traducción
+
+#### `/traducir-repo-execute`
+**Propósito**: Ejecutar traducción completa de un repositorio siguiendo su PRP.
 
 ```bash
-# Actualizar sincronización con todos los repositorios
-python3 herramientas/sincronizador-versiones.py --update
+# Ejecutar traducción completa
+/traducir-repo-execute [nombre-repositorio] --validar-continuo --actualizar-metricas
 
-# Mostrar estado actual de sincronización
-python3 herramientas/sincronizador-versiones.py --status
-
-# Sincronizar framework específico
-python3 herramientas/sincronizador-versiones.py --update --framework context-engineering-intro
-
-# Generar reporte de sincronización
-python3 herramientas/sincronizador-versiones.py --status --reporte reporte-sync.md
+# Con opciones avanzadas
+/traducir-repo-execute context-engineering-intro --prioridad alta --think-hard --persona-scribe
 ```
 
-**Casos de uso**:
-- Inicialización del proyecto
-- Verificación de cambios en repositorios originales
-- Monitoreo del estado de sincronización
-
-### 2. Validación de Terminología
-
-#### `python3 herramientas/validador-terminologia.py`
-
-**Propósito**: Validar consistencia terminológica en traducciones usando el glosario maestro.
+#### `/traducir-archivo-execute`
+**Propósito**: Traducir archivos individuales con validación granular.
 
 ```bash
+# Traducir archivo específico
+/traducir-archivo-execute PRPs/traduccion-readme-context-engineering.md --validar-inmediato
+
+# Con backup y validación
+/traducir-archivo-execute PRPs/traduccion-servidor-mcp-completa.md --backup --persona-scribe
+```
+
+### Comandos de Validación y Control
+
+#### `/validar-terminologia`
+**Propósito**: Validar consistencia terminológica contra glosario maestro.
+
+```bash
+# Validar directorio completo
+/validar-terminologia --directorio repositorios/servidor-mcp-esp/ --reporte
+
 # Validar archivo específico
-python3 herramientas/validador-terminologia.py --archivo README-es.md
-
-# Validar directorio completo recursivamente
-python3 herramientas/validador-terminologia.py --directorio repositorios/context-engineering-intro-esp/
-
-# Verificar todos los repositorios
-python3 herramientas/validador-terminologia.py --verificar-todo
-
-# Generar reporte detallado
-python3 herramientas/validador-terminologia.py --directorio repositorios/context-engineering-intro-esp/ --reporte reporte-terminologia.md
-
-# Mostrar estadísticas del glosario
-python3 herramientas/validador-terminologia.py --estadisticas
-
-# Usar glosario específico
-python3 herramientas/validador-terminologia.py --archivo README-es.md --glosario configuracion/glosario-maestro.json
+/validar-terminologia --archivo README-es.md --mostrar-detalles
 ```
 
-**Casos de uso**:
-- Validación continua durante traducción
-- Control de calidad pre-commit
-- Generación de métricas de consistencia
-- Identificación de términos inconsistentes
-
-### 3. Comandos Slash de Claude Code
-
-Estos comandos están diseñados para ser utilizados directamente en Claude Code:
-
-#### `/traducir-repo-create`
-
-**Propósito**: Generar PRPs especializados para traducción de repositorios.
+#### `/status-traduccion`
+**Propósito**: Ver estado actual del proyecto de traducción.
 
 ```bash
-# Crear PRP para Context Engineering
-/traducir-repo-create context-engineering-intro --prioridad alta --persona-scribe
-
-# Crear PRP para repositorio avanzado con análisis profundo
-/traducir-repo-create superclaude-framework --prioridad alta --think-hard
-
-# Crear PRP optimizado para tokens
-/traducir-repo-create prps-agentic-eng --uc --persona-scribe
-
-# Crear PRP para SuperClaude Framework específicamente
-/traducir-repo-create SuperClaude_Framework-master --prioridad alta --persona-scribe
-```
-
-**Salida**: Genera archivo PRP en `PRPs/traduccion-[repositorio]-completa.md`
-
-## 📊 Workflows Completos
-
-### Workflow 1: Inicialización del Proyecto
-
-```bash
-# 1. Verificar estado inicial
-python3 herramientas/sincronizador-versiones.py --status
-
-# 2. Actualizar sincronización
-python3 herramientas/sincronizador-versiones.py --update
-
-# 3. Verificar glosario maestro
-python3 herramientas/validador-terminologia.py --estadisticas
-
-# 4. Generar baseline de métricas
-python3 herramientas/sincronizador-versiones.py --status --reporte baseline-inicial.md
-```
-
-### Workflow 2: Traducción de Context Engineering Intro
-
-```bash
-# 1. Generar PRP especializado (en Claude Code)
-/traducir-repo-create context-engineering-intro --prioridad alta --persona-scribe
-
-# 2. Verificar estado pre-traducción
-python3 herramientas/sincronizador-versiones.py --framework context-engineering-intro
-
-# 3. Durante la traducción: validar archivo por archivo
-python3 herramientas/validador-terminologia.py --archivo repositorios/context-engineering-intro-esp/README-es.md
-
-# 4. Validación final del repositorio completo
-python3 herramientas/validador-terminologia.py --directorio repositorios/context-engineering-intro-esp/ --reporte validacion-final.md
-
-# 5. Actualizar métricas del proyecto
-python3 herramientas/sincronizador-versiones.py --status --reporte progreso-context-engineering.md
-```
-
-### Workflow 3: Traducción de PRPs Agentic Engineering
-
-```bash
-# 1. Generar PRP (más complejo)
-/traducir-repo-create prps-agentic-eng --prioridad alta --persona-scribe --think-hard
-
-# 2. Verificar dependencias completadas
-python3 herramientas/sincronizador-versiones.py --framework prps-agentic-eng
-
-# 3. Validación continua durante traducción
-python3 herramientas/validador-terminologia.py --directorio repositorios/prps-agentic-eng-esp/ --reporte validacion-continua.md
-
-# 4. Verificación final enterprise
-python3 herramientas/validador-terminologia.py --verificar-todo
-```
-
-### Workflow 4: Traducción de SuperClaude Framework (Enterprise)
-
-```bash
-# 1. Generar PRP enterprise
-/traducir-repo-create SuperClaude_Framework-master --prioridad alta --persona-scribe --think-hard
-
-# 2. Validación especializada enterprise
-python3 herramientas/validador-terminologia.py --directorio repositorios/superclaude-framework-esp/ --glosario configuracion/glosario-maestro.json
-
-# 3. Reporte final del proyecto
-python3 herramientas/sincronizador-versiones.py --status --reporte proyecto-completado.md
-```
-
-## 🔧 Configuración Avanzada
-
-### Personalización del Glosario
-
-```bash
-# Editar glosario maestro
-vim configuracion/glosario-maestro.json
-
-# Verificar cambios
-python3 herramientas/validador-terminologia.py --estadisticas
-```
-
-### Reglas de Traducción
-
-```bash
-# Modificar reglas
-vim configuracion/reglas-traduccion.yaml
-
-# Verificar aplicación de reglas
-python3 herramientas/validador-terminologia.py --verificar-todo
-```
-
-### Mapeo de Archivos
-
-```bash
-# Actualizar mapeo
-vim configuracion/mapeo-archivos.json
-
-# Verificar mapeo actualizado
-python3 herramientas/sincronizador-versiones.py --status
-```
-
-## 📈 Monitoreo y Métricas
-
-### Comandos de Estado
-
-```bash
-# Estado general del proyecto
-python3 herramientas/sincronizador-versiones.py --status
-
-# Métricas de terminología
-python3 herramientas/validador-terminologia.py --estadisticas
+# Estado general
+/status-traduccion
 
 # Estado específico por framework
-python3 herramientas/sincronizador-versiones.py --framework [nombre] --status
+/status-traduccion --framework servidor-mcp --detallado
 ```
 
-### Generación de Reportes
+### Comandos de Generación y Reportes
+
+#### `/traducir-repo-create`
+**Propósito**: Crear PRPs especializados para traducción (ya ejecutado para los 3 frameworks).
 
 ```bash
-# Reporte completo del proyecto
-python3 herramientas/sincronizador-versiones.py --status --reporte estado-$(date +%Y%m%d).md
-
-# Reporte de validación terminológica
-python3 herramientas/validador-terminologia.py --verificar-todo --reporte terminologia-$(date +%Y%m%d).md
+# Para nuevos repositorios futuros
+/traducir-repo-create [nuevo-repo] --prioridad alta --persona-scribe
 ```
 
-## 🎯 Casos de Uso Específicos
-
-### Para Traductores
+#### `/generar-reporte`
+**Propósito**: Generar reportes ejecutivos de traducción.
 
 ```bash
-# Workflow diario del traductor
+# Reporte general
+/generar-reporte --tipo completo
 
-# 1. Verificar estado antes de comenzar
+# Reporte específico
+/generar-reporte --framework servidor-mcp --tipo ejecutivo
+```
+
+#### `/revisar-traduccion`
+**Propósito**: Ejecutar revisión de calidad en traducciones completadas.
+
+```bash
+# Revisión completa
+/revisar-traduccion --directorio repositorios/servidor-mcp-esp/
+
+# Revisión con sugerencias
+/revisar-traduccion --archivo README-es.md --sugerir-mejoras
+```
+
+## 🛠️ Herramientas Python
+
+### Sincronizador de Versiones
+```bash
+# Ver estado actual
 python3 herramientas/sincronizador-versiones.py --status
 
-# 2. Trabajar en traducción de archivos específicos
-# (traducir manualmente usando glosario)
+# Actualizar sincronización
+python3 herramientas/sincronizador-versiones.py --update
 
-# 3. Validar trabajo realizado
-python3 herramientas/validador-terminologia.py --archivo [archivo-traducido]
-
-# 4. Al final del día: validar todo el directorio
-python3 herramientas/validador-terminologia.py --directorio repositorios/[framework]-esp/
+# Framework específico
+python3 herramientas/sincronizador-versiones.py --framework servidor-mcp
 ```
 
-### Para Revisores
-
+### Validador de Terminología
 ```bash
-# Workflow de revisión
-
-# 1. Generar reporte de estado actual
-python3 herramientas/validador-terminologia.py --directorio repositorios/[framework]-esp/ --reporte revision-$(date +%Y%m%d).md
-
-# 2. Revisar inconsistencias reportadas
-vim revision-$(date +%Y%m%d).md
-
-# 3. Después de correcciones: re-validar
+# Validar todos los repositorios
 python3 herramientas/validador-terminologia.py --verificar-todo
-```
 
-### Para Administradores de Proyecto
-
-```bash
-# Dashboard de administración
-
-# 1. Estado global
-python3 herramientas/sincronizador-versiones.py --status --reporte dashboard-$(date +%Y%m%d).md
-
-# 2. Métricas de calidad
+# Estadísticas del glosario
 python3 herramientas/validador-terminologia.py --estadisticas
 
-# 3. Actualizar repositorios originales
-python3 herramientas/sincronizador-versiones.py --update
+# Generar reporte detallado
+python3 herramientas/validador-terminologia.py --directorio repositorios/servidor-mcp-esp/ --reporte validacion.md
 ```
 
-## 🚀 Inicio Rápido
+## 🚀 Workflows Recomendados
 
-### Para Comenzar Inmediatamente
+### Para Ejecutar Traducciones de PRPs Existentes
 
 ```bash
-# 1. Configuración inicial (solo una vez)
-cd /Users/lr0y/prp-completo-docs/prp-framework-esp/
-python3 herramientas/sincronizador-versiones.py --update
+# 1. Verificar estado actual
+/status-traduccion
 
-# 2. Generar PRP para primer repositorio (mayor ROI)
-# (Ejecutar en Claude Code)
-/traducir-repo-create context-engineering-intro --prioridad alta --persona-scribe
+# 2. Ejecutar traducción del PRP deseado con persona especializada
+/traducir-archivo-execute PRPs/traduccion-servidor-mcp-completa.md --prioridad alta --think-hard --persona-scribe
 
-# 3. Comenzar traducción siguiendo el PRP generado
-# (El archivo estará en PRPs/traduccion-context-engineering-intro-completa.md)
+# 3. Validar resultados con persona de QA
+/validar-terminologia --directorio repositorios/servidor-mcp-esp/ --persona-qa
 
-# 4. Validar progreso continuamente
-python3 herramientas/validador-terminologia.py --directorio repositorios/context-engineering-intro-esp/
-
-# 5. Monitorear estado del proyecto
-python3 herramientas/sincronizador-versiones.py --status
+# 4. Generar reporte con análisis profundo
+/generar-reporte --framework servidor-mcp --persona-analyzer
 ```
 
-## ⚠️ Solución de Problemas
-
-### Errores Comunes
+### Uso Óptimo de Personas por Tarea
 
 ```bash
-# Error: No se encuentra el glosario
-# Solución: Verificar ruta
-ls -la configuracion/glosario-maestro.json
+# Para documentación técnica compleja
+/traducir-archivo-execute [archivo] --persona-scribe --think-hard
 
-# Error: Repositorio no sincronizado
-# Solución: Actualizar sincronización
-python3 herramientas/sincronizador-versiones.py --update
+# Para análisis de arquitectura
+/traducir-archivo-execute [archivo] --persona-architect --seq
 
-# Error: Inconsistencias terminológicas
-# Solución: Revisar reporte detallado
-python3 herramientas/validador-terminologia.py --directorio [path] --reporte debug.md
+# Para código con comentarios
+/traducir-archivo-execute [archivo] --persona-backend --c7
+
+# Para componentes UI
+/traducir-archivo-execute [archivo] --persona-frontend --magic
+
+# Para revisión de seguridad
+/revisar-traduccion --archivo [archivo] --persona-security --scan
 ```
 
-### Validación de Instalación
+### Para Control de Calidad Continuo
 
 ```bash
-# Verificar que todo funciona correctamente
-python3 herramientas/sincronizador-versiones.py --help
-python3 herramientas/validador-terminologia.py --help
-python3 herramientas/validador-terminologia.py --estadisticas
+# Durante traducción
+/validar-terminologia --archivo [archivo-actual] --mostrar-detalles
+
+# Al completar sección
+/revisar-traduccion --directorio [directorio-actual]
+
+# Estado general
+/status-traduccion --detallado
 ```
 
-## 💡 Valor del Sistema
+## 📊 Estado Actual del Proyecto
 
-### Beneficios Cuantificables
+### Frameworks con PRPs Listos para Ejecutar
+1. ✅ **Context Engineering Intro** - 46% completado
+2. ✅ **PRPs Agentic Engineering** - 31% completado  
+3. ✅ **SuperClaude Framework** - 0% pendiente
+4. ✅ **Servidor MCP** - 100% completado ✨
 
-- **Reducción de tiempo**: De 88 horas manuales a ~50 horas con automatización
-- **Calidad enterprise**: Validación automática >95% consistencia terminológica
-- **Escalabilidad**: Sistema reutilizable para futuros frameworks
-- **Metodología probada**: Aplicación directa de Context Engineering y PRPs
+### PRPs Disponibles para Ejecución
+- `PRPs/traduccion-context-engineering-intro-completa.md`
+- `PRPs/traduccion-prps-agentic-eng-completa.md`
+- `PRPs/traduccion-superclaude-framework-completa.md`
+- `PRPs/traduccion-servidor-mcp-completa.md` ✅
 
-### ROI del Proyecto
+## 💡 Tips de Uso
 
-- **Inversión**: 88 horas de desarrollo de infraestructura
-- **Retorno**: Acceso completo a metodologías enterprise para comunidad hispanohablante
-- **Impacto**: Posicionamiento en vanguardia del desarrollo asistido por IA
+### Ejecución Eficiente con Personas
+- **Documentación**: `--persona-scribe` + `--think-hard`
+- **Código**: `--persona-backend` o `--persona-frontend` según contexto
+- **Arquitectura**: `--persona-architect` + `--seq` para análisis profundo
+- **Calidad**: `--persona-qa` + `--validar-inmediato` para validación continua
+- **Seguridad**: `--persona-security` para revisión de vulnerabilidades
 
-### PRPs Generados
+### Validación Continua
+- Validar cada archivo tras traducción con persona apropiada
+- Ejecutar validación completa al finalizar directorio
+- Generar reportes para revisión posterior con `--persona-analyzer`
 
-El sistema incluye 3 PRPs especializados listos para uso:
+### Optimización con SuperClaude
+- Usar `--uc` (UltraCompressed) para archivos grandes
+- Combinar personas con flags de optimización (`--ultrathink`, `--iterate`)
+- Mantener metadatos actualizados con `--actualizar-metricas`
+- Aprovechar MCPs especializados:
+  - `--c7` para documentación oficial
+  - `--seq` para análisis complejo
+  - `--magic` para componentes UI
+  - `--pup` para testing automatizado
 
-1. **`PRPs/traduccion-context-engineering-intro-completa.md`** (21h estimadas)
-2. **`PRPs/traduccion-prps-agentic-eng-completa.md`** (31h estimadas)  
-3. **`PRPs/traduccion-superclaude-framework-completa.md`** (36h estimadas)
+## 🔌 Servidores MCP de SuperClaude
 
-Cada PRP contiene:
-- Context Engineering completo
-- Validation loops ejecutables  
-- Implementation blueprint detallado
-- Success criteria específicos
+### Context7 (Documentación de Librerías)
+- **Uso**: `--c7` para acceder a documentación oficial
+- **Ideal para**: Traducir referencias técnicas, APIs, patrones de frameworks
+- **Token Cost**: Bajo-Medio
 
-## 🔄 Estados del Proyecto
+### Sequential (Análisis Complejo)
+- **Uso**: `--seq` para razonamiento multi-paso
+- **Ideal para**: Arquitectura compleja, análisis profundo, decisiones técnicas
+- **Token Cost**: Medio-Alto
 
-### Infraestructura (100% Completa)
-- ✅ Análisis completo de los 3 repositorios
-- ✅ Herramientas de automatización desarrolladas
-- ✅ Configuración del sistema lista
-- ✅ PRPs especializados generados
-- ✅ Workflows documentados
+### Magic (Componentes UI)
+- **Uso**: `--magic` para generar componentes modernos
+- **Ideal para**: Traducir documentación de UI/UX, sistemas de diseño
+- **Token Cost**: Medio
 
-### Traducción (En progreso)
-- ✅ Context Engineering Intro: ~46% completado (6/13 archivos traducidos)
-- ✅ PRPs Agentic Engineering: ~31% completado (22/70 archivos traducidos)  
-- 🟡 SuperClaude Framework: 0% - Pendiente (0/38 archivos)
+### Puppeteer/Playwright (Testing)
+- **Uso**: `--pup` para automatización y testing
+- **Ideal para**: Validar traducciones, testing E2E
+- **Token Cost**: Bajo
 
-El sistema está diseñado para garantizar traducciones de calidad enterprise aplicando ingeniería de contexto profesional y metodología PRP validada.
+## 📊 Combinaciones Recomendadas
+
+### Para Traducción de Documentación Técnica
+```bash
+/traducir-archivo-execute [archivo] --persona-scribe --think-hard --c7
+```
+
+### Para Traducción de Arquitectura
+```bash
+/traducir-archivo-execute [archivo] --persona-architect --seq --ultrathink
+```
+
+### Para Traducción de Código con Comentarios
+```bash
+/traducir-archivo-execute [archivo] --persona-backend --validar-inmediato
+```
+
+### Para Revisión Final de Calidad
+```bash
+/revisar-traduccion --directorio [dir] --persona-qa --persona-analyzer --scan
+```
 
 ---
 
-**🎯 Para comenzar ahora**: Ejecuta los comandos del "Inicio Rápido" y sigue el Workflow 2 para traducir Context Engineering Intro.
+## ⚠️ Notas Importantes sobre SuperClaude
+
+### Requisitos Previos
+- **Python 3.7+** requerido (verificar con `python3 --version`)
+- **Git** para opción de clonación
+- **Permisos** para escribir en `~/.claude/`
+
+### Después de Instalar
+Una vez instalado SuperClaude, puedes usar cualquiera de estos formatos:
+- `SuperClaude [comando]` - Si está en PATH
+- `python3 SuperClaude [comando]` - Directo
+- `python3 -m SuperClaude [comando]` - Modular
+
+### Comandos SuperClaude vs Comandos de Traducción
+- **Comandos SuperClaude**: Empiezan con `/sc:` (ej: `/sc:implement`, `/sc:analyze`)
+- **Comandos de Traducción**: Sin prefijo (ej: `/traducir-archivo-execute`, `/validar-terminologia`)
+- Ambos tipos funcionan juntos para máxima efectividad
+
+---
+
+**🎯 Inicio Rápido**: 
+1. **Instala SuperClaude** (si no lo has hecho):
+   ```bash
+   git clone https://github.com/NomenAK/SuperClaude.git && cd SuperClaude && uv sync && python3 SuperClaude install
+   ```
+2. **Ejecuta traducciones** con la persona apropiada:
+   ```bash
+   /traducir-archivo-execute PRPs/[archivo-prp] --persona-scribe --think-hard
+   ```
+3. **Aprovecha** las combinaciones de personas + MCPs para traducciones de máxima calidad

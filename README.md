@@ -4,7 +4,7 @@
 [![Context Engineering](https://img.shields.io/badge/Context_Engineering-Template-blue.svg)](Context-Engineering-Intro/)
 [![PRPs Agentic](https://img.shields.io/badge/PRPs_Agentic-Professional-green.svg)](PRPs-agentic-eng/)
 [![SuperClaude v3](https://img.shields.io/badge/SuperClaude-v3.0.0_Enterprise-purple.svg)](SuperClaude_Framework-master/)
-[![Traducción Español](https://img.shields.io/badge/Traducción-23%25_Completa-orange.svg)](prp-framework-esp/)
+[![Traducción Español](https://img.shields.io/badge/Traducción-8%25_Completa-red.svg)](prp-framework-esp/)
 
 ---
 
@@ -134,10 +134,12 @@ Este ecosistema implementa **Context Engineering** - la disciplina de ingenierí
 - Prueba de concepto para implementar metodologías PRP en proyectos reales
 
 **Características Clave**:
-- ✅ 28/121 archivos traducidos (23% completo)
+- ✅ 9/160 archivos traducidos (6% completo)
 - ✅ Herramientas de validación automatizada (>95% consistencia terminológica)
-- ✅ 3 PRPs especializados para traducción sistemática
+- ✅ 4 PRPs especializados para traducción sistemática
+- ✅ Sistema completo de comandos slash para workflows de traducción
 - ✅ Herramientas de control de calidad y adaptación cultural
+- ✅ Integración SuperClaude v3 con personas y servidores MCP
 
 **Inversión de Tiempo**: ~50 horas (reducido de 88h con automatización) | **ROI**: Acceso sin barreras para 500M+ hispanohablantes
 
@@ -201,9 +203,27 @@ cat README.md
 cd SuperClaude_Framework-master/
 cat README.md
 
-# Para hispanohablantes - acceder al ecosistema traducido
+# Para hispanohablantes - acceder al ecosistema traducido con comandos completos
 cd prp-framework-esp/
-cat uso-comandos.md
+cat uso-comandos.md    # Manual completo de comandos y workflows
+cat CLAUDE.md         # Guía sistema completa en español
+```
+
+### Comandos Especializados de Traducción
+```bash
+# Instalar SuperClaude v3 (prerequisito)
+git clone https://github.com/NomenAK/SuperClaude.git && cd SuperClaude && uv sync && python3 SuperClaude install
+
+# Ejecutar traducciones con PRPs especializados
+/traducir-archivo-execute PRPs/traduccion-context-engineering-intro-completa.md --persona-scribe --think-hard
+/traducir-archivo-execute PRPs/traduccion-prps-agentic-eng-completa.md --persona-scribe --c7
+/traducir-archivo-execute PRPs/traduccion-superclaude-framework-completa.md --persona-architect --seq
+/traducir-archivo-execute PRPs/traduccion-servidor-mcp-completa.md --persona-scribe --ultrathink
+
+# Validar calidad y terminología
+/validar-terminologia --directorio repositorios/[framework]/ --persona-qa
+/status-traduccion --framework [nombre] --detallado
+/generar-reporte --tipo completo --persona-analyzer
 ```
 
 ### Implementación Profunda (Por Repositorio)
@@ -223,17 +243,20 @@ Cada repositorio contiene guías comprehensivas de configuración e implementaci
 | Context-Engineering-Intro | ✅ Estable | 100% | Activo | Creciendo |
 | PRPs-agentic-eng | ✅ Estable | 100% | Activo | Profesional |
 | SuperClaude-Framework | 🔄 v3.0.0 | 100% | Reciente | Enterprise |
-| prp-framework-esp | 🚧 Traducción | 23% (28/121 archivos) | Activo | Contribuyendo |
+| prp-framework-esp | 🚧 Traducción | 6% (9/160 archivos) | Activo | Contribuyendo |
 
 ### Detalle de Progreso de Traducción
 - **Context-Engineering-Intro**: ~46% completo (6/13 archivos)
 - **PRPs-agentic-eng**: ~31% completo (22/70 archivos)
 - **SuperClaude-Framework**: 0% completo (0/38 archivos)
+- **Servidor MCP**: ~23% completo (9/39 archivos) - documentación principal
 
 ### Métricas del Ecosistema
 - **Tiempo total de aprendizaje**: 88 horas entre todos los repositorios
 - **Herramientas automatizadas**: Reducen tiempo de implementación en 43%
 - **Validación de calidad**: >95% consistencia terminológica en traducciones
+- **Sistema de comandos**: 6 comandos slash especializados para traducción
+- **SuperClaude v3**: 10 personas + 4 servidores MCP integrados
 - **Impacto comunitario**: 500M+ desarrolladores hispanohablantes potenciales
 
 ---
