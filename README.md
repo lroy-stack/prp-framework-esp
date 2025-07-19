@@ -10,10 +10,14 @@
 
 ## 🎯 Visión del Ecosistema
 
+![Evolución de la Metodología PRP](img-docs/Evolucion-PRP.png)
+
 El **Ecosistema PRP Framework** representa la metodología más comprehensiva para transformar el desarrollo asistido por IA desde "vibe coding" hacia ingeniería de software estructurada de nivel enterprise. Este ecosistema proporciona una **ruta de aprendizaje progresiva** desde conceptos fundamentales hasta implementación empresarial.
 
 ### Filosofía Central
 > **Context Engineering es 10x mejor que prompt engineering y 100x mejor que vibe coding.**
+
+![Ingeniería de Contexto](img-docs/ingenieria-de-contexto.png)
 
 Este ecosistema implementa **Context Engineering** - la disciplina de ingeniería de contexto completo para asistentes de codificación IA, permitiéndoles tener toda la información necesaria para lograr tareas de extremo a extremo con calidad enterprise.
 
@@ -93,6 +97,8 @@ Este ecosistema implementa **Context Engineering** - la disciplina de ingenierí
 ## 🏢 3. SuperClaude-Framework
 ### **Sistema Enterprise - Escala tu Organización**
 
+![Esquema SuperClaude](img-docs/SuperClaude-Esquema.png)
+
 > **Perfecto para**: Equipos implementando desarrollo de IA de nivel enterprise
 
 **Lo que proporciona**:
@@ -100,6 +106,8 @@ Este ecosistema implementa **Context Engineering** - la disciplina de ingenierí
 - 17 comandos especializados `/sc:` con orquestación inteligente
 - 11 personas expertas con capacidades de auto-activación
 - Metodología Evidence-Based (prohíbe lenguaje de "mejores prácticas")
+
+![MCP SuperClaude](img-docs/MCP_SUPERCLAUDE.png)
 
 **Características Clave**:
 - ✅ 11 personas especializadas (architect, frontend, backend, security, etc.)
