@@ -1,0 +1,202 @@
+# Reglas de Traducción PRP Framework v1.0
+# Configuración centralizada para herramientas de traducción
+
+metadata:
+  version: "1.0.0"
+  fecha_creacion: "2025-01-19"
+  descripcion: "Reglas y estándares para traducción PRP Framework"
+  autor: "Sistema de Traducción Automatizado"
+
+# Reglas generales de traducción
+reglas_generales:
+  idioma_origen: "en"
+  idioma_destino: "es-ES"
+  dialecto: "español_españa"
+  nivel_formalidad: "tecnico_profesional"
+  mantener_formato_markdown: true
+  preservar_enlaces: true
+  preservar_codigo: true
+
+# Términos que NUNCA se traducen (mantener original)
+terminos_preservar:
+  frameworks:
+    - "PRP"
+    - "Claude Code"
+    - "Context Engineering"
+    - "MCP"
+  herramientas:
+    - "Context7"
+    - "Sequential" 
+    - "Magic"
+    - "Playwright"
+    - "TodoWrite"
+  tecnicos:
+    - "GitHub"
+    - "npm"
+    - "JSON"
+    - "YAML"
+    - "Markdown"
+  metodologicos:
+    - "Vibe Coding"
+
+# Términos que SIEMPRE se traducen
+terminos_traducir:
+  ui_ux:
+    "Quick Start": "Inicio Rápido"
+    "Getting Started": "Comenzando"
+    "Best Practices": "Mejores Prácticas"
+    "Troubleshooting": "Resolución de Problemas"
+    "User Guide": "Guía del Usuario"
+    "Installation": "Instalación"
+  metodologicos:
+    "Wave System": "Sistema de Ondas"
+    "Quality Gates": "Puertas de Calidad"
+    "Auto-activation": "Auto-activación"
+    "Thinking flags": "Flags de pensamiento"
+    "Headless mode": "Modo sin interfaz"
+  tecnicos:
+    "Slash Commands": "Comandos Slash"
+    "Token optimization": "Optimización de tokens"
+
+# Patrones específicos de traducción
+patrones_traduccion:
+  comandos:
+    patron: "/[a-zA-Z:_-]+"
+    regla: "mantener_formato_original"
+    ejemplo: "/sc:build → /sc:build (sin cambios)"
+  
+  archivos:
+    patron: "[A-Z]+\\.(md|json|py|ts)"
+    regla: "mantener_nombre_agregar_sufijo"
+    ejemplo: "README.md → README-es.md"
+  
+  links_internos:
+    patron: "\\[.*\\]\\(#.*\\)"
+    regla: "traducir_texto_mantener_anchor"
+    ejemplo: "[Getting Started](#getting-started) → [Comenzando](#getting-started)"
+  
+  codigo_inline:
+    patron: "`[^`]+`"
+    regla: "mantener_sin_cambios"
+    ejemplo: "`npm install` → `npm install`"
+  
+  bloques_codigo:
+    patron: "```[\\s\\S]*?```"
+    regla: "mantener_sin_cambios"
+    nota: "Solo traducir comentarios si están claramente marcados"
+
+# Estándares de formato
+formato:
+  titulos:
+    h1: "# 🎯 Título Principal"
+    h2: "## 🏗️ Sección Principal" 
+    h3: "### 📋 Subsección"
+    h4: "#### ⚙️ Detalle"
+    emojis_recomendados: "🎯🏗️📋⚙️🚀🔧📊💡🎭🛡️⚡🔄"
+  
+  listas:
+    viñetas: "- Elemento de lista"
+    numeradas: "1. Primer elemento"
+    checkboxes: "- [ ] Tarea pendiente"
+    checkboxes_completadas: "- [x] Tarea completada"
+  
+  enfasis:
+    negrita: "**texto importante**"
+    cursiva: "*énfasis leve*"
+    codigo: "`código inline`"
+    cita: "> Cita o nota importante"
+
+# Adaptaciones culturales
+adaptaciones_culturales:
+  ejemplos_empresariales:
+    original: "Acme Corp"
+    traducido: "TechnoSoft SA"
+    contexto: "Adaptar a empresas hispanohablantes"
+  
+  referencias_geograficas:
+    original: "Silicon Valley"
+    traducido: "Madrid/Barcelona tech hub"
+    contexto: "Cuando sea relevante culturalmente"
+  
+  monedas:
+    original: "$100"
+    traducido: "100€"
+    contexto: "Solo si es ejemplo ilustrativo"
+
+# Validaciones automáticas
+validaciones:
+  consistencia_terminologica:
+    activar: true
+    umbral_error: 0.05
+    generar_reporte: true
+  
+  preservacion_estructura:
+    verificar_titulos: true
+    verificar_enlaces: true
+    verificar_formato_codigo: true
+    verificar_metadatos_frontmatter: true
+  
+  calidad_traduccion:
+    verificar_longitud_razonable: true
+    ratio_longitud_maximo: 1.5
+    verificar_caracteres_especiales: true
+    verificar_encoding_utf8: true
+
+# Flujo de trabajo
+workflow:
+  pasos_obligatorios:
+    1: "analisis_previo"
+    2: "traduccion_primera_pasada"
+    3: "validacion_terminologica"
+    4: "revision_estructura"
+    5: "validacion_calidad"
+    6: "aprobacion_final"
+  
+  criterios_aprobacion:
+    consistencia_terminologica: ">= 95%"
+    preservacion_estructura: "= 100%"
+    funcionalidad_codigo: "= 100%"
+    revision_humana: "obligatoria"
+
+# Configuración herramientas
+herramientas:
+  validador_terminologia:
+    strictness: "alto"
+    generar_sugerencias: true
+    modo_interactivo: false
+  
+  verificador_calidad:
+    verificar_enlaces_externos: false
+    verificar_enlaces_internos: true
+    timeout_verificacion: 30
+  
+  generador_reportes:
+    formato_preferido: "markdown"
+    incluir_metricas: true
+    incluir_sugerencias: true
+    nivel_detalle: "completo"
+
+# Excepciones y casos especiales
+excepciones:
+  archivos_no_traducir:
+    - "LICENSE"
+    - "CHANGELOG.md"
+    - "package.json"
+    - "*.py"
+    - "*.ts"
+    - "*.js"
+  
+  directorios_excluir:
+    - ".git"
+    - "node_modules"
+    - "__pycache__"
+    - ".pytest_cache"
+    - "dist"
+    - "build"
+  
+  contenido_preservar:
+    - urls_externas
+    - hashes_git
+    - identificadores_tecnicos
+    - nombres_metodos_api
+    - parametros_configuracion

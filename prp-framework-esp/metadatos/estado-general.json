@@ -1,0 +1,981 @@
+{
+  "metadatos": {
+    "version": "1.0.0",
+    "fecha_creacion": "2025-01-19T15:30:00Z",
+    "ultima_actualizacion": "2025-01-19T15:30:00Z",
+    "descripcion": "Estado general del proyecto de traducción PRP Framework",
+    "responsable": "Sistema de Traducción Automatizado"
+  },
+  "estadisticas_globales": {
+    "frameworks_total": 3,
+    "archivos_identificados": 121,
+    "archivos_traducidos": 0,
+    "archivos_pendientes": 142,
+    "progreso_total_porcentaje": 0.0,
+    "terminos_glosario": 45,
+    "ultima_sincronizacion": "2025-07-19T16:37:58.385697"
+  },
+  "frameworks": {
+    "context-engineering-intro": {
+      "nombre_completo": "Context Engineering Template",
+      "estado": "pendiente",
+      "prioridad": "alta",
+      "archivos_total": 12,
+      "archivos_traducidos": 0,
+      "archivos_pendientes": 12,
+      "progreso_porcentaje": 0.0,
+      "complejidad_estimada": "media",
+      "tiempo_estimado_horas": 24,
+      "archivos_criticos": [
+        "README.md",
+        "CLAUDE.md",
+        "INITIAL.md",
+        "PRPs/templates/prp_base.md"
+      ],
+      "dependencias": [],
+      "ultima_sincronizacion": "2025-07-19T16:37:58.364798",
+      "traduccion_iniciada": null,
+      "fecha_objetivo": "2025-02-02",
+      "archivos_sincronizados": {
+        "INITIAL_EXAMPLE.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/Context-Engineering-Intro/INITIAL_EXAMPLE.md",
+          "fecha_modificacion": "2025-07-18T18:29:20.087410",
+          "tamaño": 1296,
+          "hash_contenido": "994f6a4e17cbc742527e3501e70eb887",
+          "estado": "nuevo"
+        },
+        "INITIAL.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/Context-Engineering-Intro/use-cases/mcp-server/PRPs/INITIAL.md",
+          "fecha_modificacion": "2025-07-18T18:29:20.090044",
+          "tamaño": 1388,
+          "hash_contenido": "2ecc9d11ec9bfdc97d10670cb37183bd",
+          "estado": "nuevo"
+        },
+        "README.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/Context-Engineering-Intro/use-cases/mcp-server/PRPs/README.md",
+          "fecha_modificacion": "2025-07-18T18:29:20.090162",
+          "tamaño": 2567,
+          "hash_contenido": "30a7baac76492fbf657f5fb16fb08efe",
+          "estado": "nuevo"
+        },
+        "CLAUDE.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/Context-Engineering-Intro/use-cases/mcp-server/CLAUDE.md",
+          "fecha_modificacion": "2025-07-18T18:29:20.089861",
+          "tamaño": 25154,
+          "hash_contenido": "8c62b7000b70198a370d0d6f0bf79118",
+          "estado": "nuevo"
+        },
+        "EXAMPLE_multi_agent_prp.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/Context-Engineering-Intro/PRPs/EXAMPLE_multi_agent_prp.md",
+          "fecha_modificacion": "2025-07-18T18:29:20.087876",
+          "tamaño": 13304,
+          "hash_contenido": "63f87ccedb3abeaaac6782f969139d29",
+          "estado": "nuevo"
+        },
+        "prp_base.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/Context-Engineering-Intro/PRPs/templates/prp_base.md",
+          "fecha_modificacion": "2025-07-18T18:29:20.088133",
+          "tamaño": 6124,
+          "hash_contenido": "8e8a5a3afc7e87eb7a00e359de358875",
+          "estado": "nuevo"
+        },
+        "mcp_patterns.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/Context-Engineering-Intro/use-cases/mcp-server/PRPs/ai_docs/mcp_patterns.md",
+          "fecha_modificacion": "2025-07-18T18:29:20.090653",
+          "tamaño": 11112,
+          "hash_contenido": "4579e3b61f1bc877c37715c419cf4d73",
+          "estado": "nuevo"
+        },
+        "claude_api_usage.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/Context-Engineering-Intro/use-cases/mcp-server/PRPs/ai_docs/claude_api_usage.md",
+          "fecha_modificacion": "2025-07-18T18:29:20.090343",
+          "tamaño": 763,
+          "hash_contenido": "c7a894097b941ea6bdb9a15208be1bb7",
+          "estado": "nuevo"
+        },
+        "prp_mcp_base.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/Context-Engineering-Intro/use-cases/mcp-server/PRPs/templates/prp_mcp_base.md",
+          "fecha_modificacion": "2025-07-18T18:29:20.090931",
+          "tamaño": 18601,
+          "hash_contenido": "dbbc7ef1d52f102683a947d2d7f104c8",
+          "estado": "nuevo"
+        },
+        "prp-mcp-execute.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/Context-Engineering-Intro/use-cases/mcp-server/.claude/commands/prp-mcp-execute.md",
+          "fecha_modificacion": "2025-07-18T18:29:20.089211",
+          "tamaño": 1887,
+          "hash_contenido": "56ea6093e5a85395bdbf46d2dc60b50a",
+          "estado": "nuevo"
+        },
+        "prp-mcp-create.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/Context-Engineering-Intro/use-cases/mcp-server/.claude/commands/prp-mcp-create.md",
+          "fecha_modificacion": "2025-07-18T18:29:20.089086",
+          "tamaño": 4696,
+          "hash_contenido": "5ce0391e32db8fb6968dd86645374ead",
+          "estado": "nuevo"
+        },
+        "generate-prp.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/Context-Engineering-Intro/.claude/commands/generate-prp.md",
+          "fecha_modificacion": "2025-07-18T18:29:20.086508",
+          "tamaño": 2639,
+          "hash_contenido": "a809b68af295e1a26d3cdf524fb24a06",
+          "estado": "nuevo"
+        },
+        "execute-prp.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/Context-Engineering-Intro/.claude/commands/execute-prp.md",
+          "fecha_modificacion": "2025-07-18T18:29:20.086378",
+          "tamaño": 1264,
+          "hash_contenido": "256e4d6767109c9fa91670d332e59483",
+          "estado": "nuevo"
+        }
+      }
+    },
+    "prps-agentic-eng": {
+      "nombre_completo": "PRPs Agentic Engineering",
+      "estado": "pendiente",
+      "prioridad": "alta",
+      "archivos_total": 85,
+      "archivos_traducidos": 0,
+      "archivos_pendientes": 85,
+      "progreso_porcentaje": 0.0,
+      "complejidad_estimada": "alta",
+      "tiempo_estimado_horas": 120,
+      "archivos_criticos": [
+        "README.md",
+        "CLAUDE.md",
+        "PRPs/templates/prp_base.md",
+        "PRPs/ai_docs/cc_overview.md",
+        "PRPs/scripts/prp_runner.py"
+      ],
+      "dependencias": [
+        "context-engineering-intro"
+      ],
+      "ultima_sincronizacion": "2025-07-19T16:37:58.378718",
+      "traduccion_iniciada": null,
+      "fecha_objetivo": "2025-02-16",
+      "archivos_sincronizados": {
+        "README.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/use-cases/mcp-server/PRPs/README.md",
+          "fecha_modificacion": "2025-07-19T15:29:39.769581",
+          "tamaño": 2567,
+          "hash_contenido": "30a7baac76492fbf657f5fb16fb08efe",
+          "estado": "nuevo"
+        },
+        "Super_Claude_Docs.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/Super_Claude_Docs.md",
+          "fecha_modificacion": "2025-07-19T16:03:51.212569",
+          "tamaño": 14977,
+          "hash_contenido": "16d9564721a1fc44bae3dee2546e0509",
+          "estado": "nuevo"
+        },
+        "CLAUDE.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/use-cases/mcp-server/CLAUDE.md",
+          "fecha_modificacion": "2025-07-19T15:29:39.768683",
+          "tamaño": 25154,
+          "hash_contenido": "8c62b7000b70198a370d0d6f0bf79118",
+          "estado": "nuevo"
+        },
+        "CLAUDE-REACT.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/claude_md_files/CLAUDE-REACT.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.601775",
+          "tamaño": 29759,
+          "hash_contenido": "45596a5149df5002b3c5b84b4ea7df4f",
+          "estado": "nuevo"
+        },
+        "CLAUDE-PYTHON-BASIC.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/claude_md_files/CLAUDE-PYTHON-BASIC.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.598622",
+          "tamaño": 19991,
+          "hash_contenido": "d91ec882122396f8c4e6b1260b028c0e",
+          "estado": "nuevo"
+        },
+        "CLAUDE-JAVA-GRADLE.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/claude_md_files/CLAUDE-JAVA-GRADLE.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.596762",
+          "tamaño": 23449,
+          "hash_contenido": "7dda8971dcbb68b4cd0fdc8c5b168f90",
+          "estado": "nuevo"
+        },
+        "CLAUDE-NODE.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/claude_md_files/CLAUDE-NODE.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.597689",
+          "tamaño": 15540,
+          "hash_contenido": "3caa5713c6d3af46d82e170925823be1",
+          "estado": "nuevo"
+        },
+        "CLAUDE-ASTRO.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/claude_md_files/CLAUDE-ASTRO.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.596504",
+          "tamaño": 25952,
+          "hash_contenido": "efd8ee1c383a2ff2e5b6344cc7d4ed5d",
+          "estado": "nuevo"
+        },
+        "CLAUDE-JAVA-MAVEN.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/claude_md_files/CLAUDE-JAVA-MAVEN.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.597018",
+          "tamaño": 20159,
+          "hash_contenido": "963b523515cec6be0af110e496c86594",
+          "estado": "nuevo"
+        },
+        "CLAUDE-NEXTJS-15.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/claude_md_files/CLAUDE-NEXTJS-15.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.597470",
+          "tamaño": 21935,
+          "hash_contenido": "31149e681bbc0235b881607e53b4e6dc",
+          "estado": "nuevo"
+        },
+        "pydantic-ai-prp-creation-agent-parallel.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/PRPs/pydantic-ai-prp-creation-agent-parallel.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.594939",
+          "tamaño": 24573,
+          "hash_contenido": "92c40c01c1162a47f93bebca68f0e086",
+          "estado": "nuevo"
+        },
+        "example-from-workshop-mcp-crawl4ai-refactor-1.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/PRPs/example-from-workshop-mcp-crawl4ai-refactor-1.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.594783",
+          "tamaño": 15294,
+          "hash_contenido": "bb60655ea01c5c9146dccdfb0c1870d7",
+          "estado": "nuevo"
+        },
+        "cc_monitoring.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/PRPs/ai_docs/cc_monitoring.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.593881",
+          "tamaño": 18163,
+          "hash_contenido": "f10806c2b9df4223f153f42580f3e726",
+          "estado": "nuevo"
+        },
+        "cc_memory.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/PRPs/ai_docs/cc_memory.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.593743",
+          "tamaño": 4367,
+          "hash_contenido": "9429242b6b1acac57d039b956deb6eb1",
+          "estado": "nuevo"
+        },
+        "cc_deployment.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/PRPs/ai_docs/cc_deployment.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.592734",
+          "tamaño": 26628,
+          "hash_contenido": "6206890064e367293c1c4ee5934b2ca6",
+          "estado": "nuevo"
+        },
+        "cc_troubleshoot.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/PRPs/ai_docs/cc_troubleshoot.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.594619",
+          "tamaño": 6586,
+          "hash_contenido": "873ded93d34ca8dd82ae404c7d98efed",
+          "estado": "nuevo"
+        },
+        "cc_overview.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/PRPs/ai_docs/cc_overview.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.594318",
+          "tamaño": 15877,
+          "hash_contenido": "2952c345d68d8d8ac393cf313bcbeaef",
+          "estado": "nuevo"
+        },
+        "cc_mcp.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/PRPs/ai_docs/cc_mcp.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.593514",
+          "tamaño": 13599,
+          "hash_contenido": "da97ee29386b8b7023186422d8dbf0a0",
+          "estado": "nuevo"
+        },
+        "cc_hooks.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/PRPs/ai_docs/cc_hooks.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.593336",
+          "tamaño": 15853,
+          "hash_contenido": "7b24379d93c18b0011031051f7f9017a",
+          "estado": "nuevo"
+        },
+        "cc_administration.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/PRPs/ai_docs/cc_administration.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.592054",
+          "tamaño": 21383,
+          "hash_contenido": "b89594365e9e5c30702c3a8c7ef80469",
+          "estado": "nuevo"
+        },
+        "cc_settings.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/PRPs/ai_docs/cc_settings.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.594466",
+          "tamaño": 15713,
+          "hash_contenido": "7e811621551ddb7500d70940e3ffc370",
+          "estado": "nuevo"
+        },
+        "build_with_claude_code.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/PRPs/ai_docs/build_with_claude_code.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.591697",
+          "tamaño": 36337,
+          "hash_contenido": "d5dea5580923a71c741299df277de4a5",
+          "estado": "nuevo"
+        },
+        "cc_github_actions.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/PRPs/ai_docs/cc_github_actions.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.592931",
+          "tamaño": 22526,
+          "hash_contenido": "de01f2440e6e804d26421d21f34be160",
+          "estado": "nuevo"
+        },
+        "cc_commands.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/PRPs/ai_docs/cc_commands.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.592295",
+          "tamaño": 7627,
+          "hash_contenido": "33d60004b9cfbed9ba21b10a6b02b2e5",
+          "estado": "nuevo"
+        },
+        "cc_common_workflows.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/PRPs/ai_docs/cc_common_workflows.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.592494",
+          "tamaño": 20548,
+          "hash_contenido": "2cbf90f01cb9a85e396bc1fce802b484",
+          "estado": "nuevo"
+        },
+        "prp_base.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/PRPs/templates/prp_base.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.595371",
+          "tamaño": 6409,
+          "hash_contenido": "92549c1a9e4e18d8d167c2796c134606",
+          "estado": "nuevo"
+        },
+        "prp_planning.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/PRPs/templates/prp_planning.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.595698",
+          "tamaño": 7678,
+          "hash_contenido": "87f4565cb91564a6ff84949573ae742a",
+          "estado": "nuevo"
+        },
+        "prp_spec.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/PRPs/templates/prp_spec.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.595881",
+          "tamaño": 1850,
+          "hash_contenido": "4b76669df2d63607931cb9c19d457988",
+          "estado": "nuevo"
+        },
+        "prp_base_typescript.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/PRPs/templates/prp_base_typescript.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.595533",
+          "tamaño": 7413,
+          "hash_contenido": "e522758c018b7f15bf60da0a5607e75a",
+          "estado": "nuevo"
+        },
+        "prp_task.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/PRPs/templates/prp_task.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.596082",
+          "tamaño": 4254,
+          "hash_contenido": "41c80961cb9b0c04f39ae298291619c1",
+          "estado": "nuevo"
+        },
+        "INITIAL.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/use-cases/mcp-server/PRPs/INITIAL.md",
+          "fecha_modificacion": "2025-07-19T15:29:39.769339",
+          "tamaño": 1388,
+          "hash_contenido": "2ecc9d11ec9bfdc97d10670cb37183bd",
+          "estado": "nuevo"
+        },
+        "mcp_patterns.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/use-cases/mcp-server/PRPs/ai_docs/mcp_patterns.md",
+          "fecha_modificacion": "2025-07-19T15:29:39.770289",
+          "tamaño": 11112,
+          "hash_contenido": "4579e3b61f1bc877c37715c419cf4d73",
+          "estado": "nuevo"
+        },
+        "claude_api_usage.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/use-cases/mcp-server/PRPs/ai_docs/claude_api_usage.md",
+          "fecha_modificacion": "2025-07-19T15:29:39.769956",
+          "tamaño": 763,
+          "hash_contenido": "c7a894097b941ea6bdb9a15208be1bb7",
+          "estado": "nuevo"
+        },
+        "prp_mcp_base.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/use-cases/mcp-server/PRPs/templates/prp_mcp_base.md",
+          "fecha_modificacion": "2025-07-19T15:29:39.771141",
+          "tamaño": 18601,
+          "hash_contenido": "dbbc7ef1d52f102683a947d2d7f104c8",
+          "estado": "nuevo"
+        },
+        "prp-mcp-execute.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/use-cases/mcp-server/.claude/commands/prp-mcp-execute.md",
+          "fecha_modificacion": "2025-07-19T15:29:39.757330",
+          "tamaño": 1887,
+          "hash_contenido": "56ea6093e5a85395bdbf46d2dc60b50a",
+          "estado": "nuevo"
+        },
+        "prp-mcp-create.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/use-cases/mcp-server/.claude/commands/prp-mcp-create.md",
+          "fecha_modificacion": "2025-07-19T15:29:39.756750",
+          "tamaño": 4696,
+          "hash_contenido": "5ce0391e32db8fb6968dd86645374ead",
+          "estado": "nuevo"
+        },
+        "smart-commit.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/.claude/commands/development/smart-commit.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.587896",
+          "tamaño": 1193,
+          "hash_contenido": "33e8b605b7ec3aa850b2b2f20d736afe",
+          "estado": "nuevo"
+        },
+        "prime-core.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/.claude/commands/development/prime-core.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.587788",
+          "tamaño": 614,
+          "hash_contenido": "d7d48e33f60ff2141b1d8ec26151fe4f",
+          "estado": "nuevo"
+        },
+        "create-pr.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/.claude/commands/development/create-pr.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.587335",
+          "tamaño": 1901,
+          "hash_contenido": "696812554d870047eac4627d98ea272c",
+          "estado": "nuevo"
+        },
+        "debug-RCA.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/.claude/commands/development/debug-RCA.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.587450",
+          "tamaño": 2554,
+          "hash_contenido": "3094fdb87f69d2496a75a7323cf74b94",
+          "estado": "nuevo"
+        },
+        "new-dev-branch.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/.claude/commands/development/new-dev-branch.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.587550",
+          "tamaño": 211,
+          "hash_contenido": "0fe616a41cafb4b63c182eb28e87ac12",
+          "estado": "nuevo"
+        },
+        "onboarding.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/.claude/commands/development/onboarding.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.587667",
+          "tamaño": 3070,
+          "hash_contenido": "1adf32ac156691c32cbeeea6dbae1210",
+          "estado": "nuevo"
+        },
+        "TS-review-general.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/.claude/commands/typescript/TS-review-general.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.590631",
+          "tamaño": 6814,
+          "hash_contenido": "2760d59f9b3619a5bc3d318de475a966",
+          "estado": "nuevo"
+        },
+        "TS-review-staged-unstaged.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/.claude/commands/typescript/TS-review-staged-unstaged.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.590749",
+          "tamaño": 4046,
+          "hash_contenido": "6417a8c361fac50f496e86b637404511",
+          "estado": "nuevo"
+        },
+        "TS-create-base-prp.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/.claude/commands/typescript/TS-create-base-prp.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.590364",
+          "tamaño": 4031,
+          "hash_contenido": "84fdee8d5b011aa9090bab4b1b5c377f",
+          "estado": "nuevo"
+        },
+        "TS-execute-base-prp.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/.claude/commands/typescript/TS-execute-base-prp.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.590463",
+          "tamaño": 1984,
+          "hash_contenido": "5dae10cff76414e8c34941379088f76e",
+          "estado": "nuevo"
+        },
+        "refactor-simple.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/.claude/commands/code-quality/refactor-simple.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.586925",
+          "tamaño": 849,
+          "hash_contenido": "caa716d6d2b4a3229ae19229d94bbe3a",
+          "estado": "nuevo"
+        },
+        "review-general.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/.claude/commands/code-quality/review-general.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.587050",
+          "tamaño": 2444,
+          "hash_contenido": "632496c0213f26e7177af9932a2964b1",
+          "estado": "nuevo"
+        },
+        "review-staged-unstaged.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/.claude/commands/code-quality/review-staged-unstaged.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.587164",
+          "tamaño": 2242,
+          "hash_contenido": "5bfd22091a9960e9f73ea2419431b2d2",
+          "estado": "nuevo"
+        },
+        "prp-spec-create.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/.claude/commands/PRPs/prp-spec-create.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.586234",
+          "tamaño": 2790,
+          "hash_contenido": "670b35d2a12b8847a72f86f5e25f8d9e",
+          "estado": "nuevo"
+        },
+        "prp-planning-create.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/.claude/commands/PRPs/prp-planning-create.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.586105",
+          "tamaño": 3109,
+          "hash_contenido": "8a7b984f5277c5c14c6d7e365020e874",
+          "estado": "nuevo"
+        },
+        "prp-task-execute.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/.claude/commands/PRPs/prp-task-execute.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.586626",
+          "tamaño": 426,
+          "hash_contenido": "5c01bb055b77679ab0c9a0897c7595f0",
+          "estado": "nuevo"
+        },
+        "prp-task-create.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/.claude/commands/PRPs/prp-task-create.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.586514",
+          "tamaño": 2172,
+          "hash_contenido": "95c3bbdb039ca65bac2813338b8d6a75",
+          "estado": "nuevo"
+        },
+        "prp-base-create.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/.claude/commands/PRPs/prp-base-create.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.585775",
+          "tamaño": 3722,
+          "hash_contenido": "53e7dbc6002e49225763e94faaf7d66e",
+          "estado": "nuevo"
+        },
+        "task-list-init.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/.claude/commands/PRPs/task-list-init.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.586739",
+          "tamaño": 1074,
+          "hash_contenido": "2b1ba0363e0972633dd286455b0ad850",
+          "estado": "nuevo"
+        },
+        "prp-spec-execute.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/.claude/commands/PRPs/prp-spec-execute.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.586368",
+          "tamaño": 847,
+          "hash_contenido": "4dd9e61f03062ecfcb6584a78e00c1ae",
+          "estado": "nuevo"
+        },
+        "api-contract-define.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/.claude/commands/PRPs/api-contract-define.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.585598",
+          "tamaño": 3032,
+          "hash_contenido": "a04eeb9dbbbac433db49d4d930496101",
+          "estado": "nuevo"
+        },
+        "prp-base-execute.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/.claude/commands/PRPs/prp-base-execute.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.585952",
+          "tamaño": 1750,
+          "hash_contenido": "b9317c9e6aa649f1e2594f278ebefd1d",
+          "estado": "nuevo"
+        },
+        "conflict-resolver-general.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/.claude/commands/git-operations/conflict-resolver-general.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.588066",
+          "tamaño": 1904,
+          "hash_contenido": "b0891f61baa85444770a000ec189ec55",
+          "estado": "nuevo"
+        },
+        "conflict-resolver-specific.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/.claude/commands/git-operations/conflict-resolver-specific.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.588176",
+          "tamaño": 1247,
+          "hash_contenido": "f7edc319e328fc80c17eaaa46027eb2b",
+          "estado": "nuevo"
+        },
+        "smart-resolver.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/.claude/commands/git-operations/smart-resolver.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.588285",
+          "tamaño": 1915,
+          "hash_contenido": "c71d979d7dea1ad304e3929c2e4b527b",
+          "estado": "nuevo"
+        },
+        "hackathon-research.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/.claude/commands/rapid-development/experimental/hackathon-research.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.589384",
+          "tamaño": 34629,
+          "hash_contenido": "d8894b340b9c9f2b377c746125d52a6f",
+          "estado": "nuevo"
+        },
+        "prp-analyze-run.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/.claude/commands/rapid-development/experimental/prp-analyze-run.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.589836",
+          "tamaño": 21628,
+          "hash_contenido": "9feff790a392b57d9dd0626e00175b0a",
+          "estado": "nuevo"
+        },
+        "user-story-rapid.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/.claude/commands/rapid-development/experimental/user-story-rapid.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.590173",
+          "tamaño": 2907,
+          "hash_contenido": "7b99362b8122f889525a4595400cddde",
+          "estado": "nuevo"
+        },
+        "prp-validate.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/.claude/commands/rapid-development/experimental/prp-validate.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.590049",
+          "tamaño": 4901,
+          "hash_contenido": "3026cf7e82fe2f97bdb352f0f8c10e48",
+          "estado": "nuevo"
+        },
+        "create-planning-parallel.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/.claude/commands/rapid-development/experimental/create-planning-parallel.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.588974",
+          "tamaño": 6708,
+          "hash_contenido": "5004fd3adc94d0f8c6e41f9b67ea4cb7",
+          "estado": "nuevo"
+        },
+        "parallel-prp-creation.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/.claude/commands/rapid-development/experimental/parallel-prp-creation.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.589614",
+          "tamaño": 18017,
+          "hash_contenido": "69af1005e5da0f8af825388f7ad01d12",
+          "estado": "nuevo"
+        },
+        "create-base-prp-parallel.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/.claude/commands/rapid-development/experimental/create-base-prp-parallel.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.588802",
+          "tamaño": 8069,
+          "hash_contenido": "b84448dd888471299ea525f8120c6c54",
+          "estado": "nuevo"
+        },
+        "hackathon-prp-parallel.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/.claude/commands/rapid-development/experimental/hackathon-prp-parallel.md",
+          "fecha_modificacion": "2025-07-19T15:13:00.589188",
+          "tamaño": 11066,
+          "hash_contenido": "deaea7fb230cba9e7d62f2add597543f",
+          "estado": "nuevo"
+        },
+        "prp_runner.py": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/PRPs-agentic-eng/PRPs/scripts/prp_runner.py",
+          "fecha_modificacion": "2025-07-19T15:13:00.595152",
+          "tamaño": 10223,
+          "hash_contenido": "3a24e635a7ec37445039d08184c4f7ea",
+          "estado": "nuevo"
+        }
+      }
+    },
+    "superclaude-framework": {
+      "nombre_completo": "SuperClaude Framework v3",
+      "estado": "pendiente",
+      "prioridad": "media",
+      "archivos_total": 45,
+      "archivos_traducidos": 0,
+      "archivos_pendientes": 45,
+      "progreso_porcentaje": 0.0,
+      "complejidad_estimada": "alta",
+      "tiempo_estimado_horas": 80,
+      "archivos_criticos": [
+        "README.md",
+        "SuperClaude/Core/CLAUDE.md",
+        "SuperClaude/Core/COMMANDS.md",
+        "SuperClaude/Core/PERSONAS.md",
+        "Docs/superclaude-user-guide.md"
+      ],
+      "dependencias": [
+        "context-engineering-intro",
+        "prps-agentic-eng"
+      ],
+      "ultima_sincronizacion": "2025-07-19T16:37:58.385695",
+      "traduccion_iniciada": null,
+      "fecha_objetivo": "2025-03-02",
+      "archivos_sincronizados": {
+        "CODE_OF_CONDUCT.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/CODE_OF_CONDUCT.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 6634,
+          "hash_contenido": "e27d93f544aaeb1acdf1b110899537b0",
+          "estado": "nuevo"
+        },
+        "CHANGELOG.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/CHANGELOG.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 2138,
+          "hash_contenido": "475a4b9234e4a0d03a58dcd24ef5f0e3",
+          "estado": "nuevo"
+        },
+        "README.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/README.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 12081,
+          "hash_contenido": "e7a61484a1e0a397bd660fc76a4ecb49",
+          "estado": "nuevo"
+        },
+        "ROADMAP.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/ROADMAP.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 6421,
+          "hash_contenido": "05be2932a4140b0c34ddf121616bcdd0",
+          "estado": "nuevo"
+        },
+        "CONTRIBUTING.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/CONTRIBUTING.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 5944,
+          "hash_contenido": "629053cabbd417cd5f9b25c1cdbe6b04",
+          "estado": "nuevo"
+        },
+        "Super_Claude_Docs.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/Super_Claude_Docs.md",
+          "fecha_modificacion": "2025-07-19T16:03:51.212569",
+          "tamaño": 14977,
+          "hash_contenido": "16d9564721a1fc44bae3dee2546e0509",
+          "estado": "nuevo"
+        },
+        "SECURITY.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/SECURITY.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 6705,
+          "hash_contenido": "eae71e2898a87089544a54f48914053a",
+          "estado": "nuevo"
+        },
+        "flags-guide.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/Docs/flags-guide.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 18425,
+          "hash_contenido": "17184f17fc8d0249653493cf15333df3",
+          "estado": "nuevo"
+        },
+        "commands-guide.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/Docs/commands-guide.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 26478,
+          "hash_contenido": "85db7929127de2eafd8cdc9c9279cee8",
+          "estado": "nuevo"
+        },
+        "personas-guide.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/Docs/personas-guide.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 28244,
+          "hash_contenido": "523f851051f005500bafe9a81611d24d",
+          "estado": "nuevo"
+        },
+        "installation-guide.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/Docs/installation-guide.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 16014,
+          "hash_contenido": "2814fe799538ec3f9a71b5e415db601d",
+          "estado": "nuevo"
+        },
+        "superclaude-user-guide.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/Docs/superclaude-user-guide.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 108483,
+          "hash_contenido": "087c507d186d399f5d45d2234681a7bf",
+          "estado": "nuevo"
+        },
+        "ORCHESTRATOR.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/SuperClaude/Core/ORCHESTRATOR.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 22817,
+          "hash_contenido": "41af1205c74b77921706710a607dd8fa",
+          "estado": "nuevo"
+        },
+        "PRINCIPLES.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/SuperClaude/Core/PRINCIPLES.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 9510,
+          "hash_contenido": "3fe985161a240a2062cc61c9644f00f2",
+          "estado": "nuevo"
+        },
+        "MCP.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/SuperClaude/Core/MCP.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 11593,
+          "hash_contenido": "e19a6e7f9de54ddfde68e33b79d9f78d",
+          "estado": "nuevo"
+        },
+        "COMMANDS.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/SuperClaude/Core/COMMANDS.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 5734,
+          "hash_contenido": "1f0c62e76cbb214cb463e431814a92cf",
+          "estado": "nuevo"
+        },
+        "PERSONAS.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/SuperClaude/Core/PERSONAS.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 20671,
+          "hash_contenido": "263c81c540e4d81ec98d2d8f8f79abee",
+          "estado": "nuevo"
+        },
+        "RULES.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/SuperClaude/Core/RULES.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 2507,
+          "hash_contenido": "d621b50b4601143087212fc581e48c58",
+          "estado": "nuevo"
+        },
+        "MODES.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/SuperClaude/Core/MODES.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 13829,
+          "hash_contenido": "3ce5d9a26223789589fd00f98b2cab3d",
+          "estado": "nuevo"
+        },
+        "FLAGS.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/SuperClaude/Core/FLAGS.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 8876,
+          "hash_contenido": "2eb733b85a3546fbb97350e49eb1c964",
+          "estado": "nuevo"
+        },
+        "CLAUDE.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/SuperClaude/Core/CLAUDE.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 123,
+          "hash_contenido": "e21930d172368dc83aa09f9bc3f8b40f",
+          "estado": "nuevo"
+        },
+        "document.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/SuperClaude/Commands/document.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 1122,
+          "hash_contenido": "2a053fc4194919ea6a6ee31530650e76",
+          "estado": "nuevo"
+        },
+        "spawn.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/SuperClaude/Commands/spawn.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 1090,
+          "hash_contenido": "53b9e3169a2a7addca1b229924dc4551",
+          "estado": "nuevo"
+        },
+        "estimate.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/SuperClaude/Commands/estimate.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 1092,
+          "hash_contenido": "b6f6430d40b564801c15bfdafb9d0018",
+          "estado": "nuevo"
+        },
+        "implement.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/SuperClaude/Commands/implement.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 2365,
+          "hash_contenido": "a2c6934d46781c06ee7a6351ec1254f0",
+          "estado": "nuevo"
+        },
+        "troubleshoot.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/SuperClaude/Commands/troubleshoot.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 1085,
+          "hash_contenido": "64d89d1e03259205b99f0567d67669e0",
+          "estado": "nuevo"
+        },
+        "improve.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/SuperClaude/Commands/improve.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 1124,
+          "hash_contenido": "4e19bec5eca75c0652fdc4552397e848",
+          "estado": "nuevo"
+        },
+        "explain.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/SuperClaude/Commands/explain.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 1117,
+          "hash_contenido": "627757279a5a44f8539534178dc1b8df",
+          "estado": "nuevo"
+        },
+        "analyze.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/SuperClaude/Commands/analyze.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 1078,
+          "hash_contenido": "075d102f2c01647e03dc638df388ebc7",
+          "estado": "nuevo"
+        },
+        "workflow.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/SuperClaude/Commands/workflow.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 13281,
+          "hash_contenido": "1cf10451a8891cd5f4e4d16fcab1e6ab",
+          "estado": "nuevo"
+        },
+        "load.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/SuperClaude/Commands/load.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 1084,
+          "hash_contenido": "3d28038a2812875063295c94fd05ae4f",
+          "estado": "nuevo"
+        },
+        "index.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/SuperClaude/Commands/index.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 1123,
+          "hash_contenido": "a1e95a79e81d823c857b366fe3ecf901",
+          "estado": "nuevo"
+        },
+        "build.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/SuperClaude/Commands/build.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 1096,
+          "hash_contenido": "42797fa162cc293d741017ee19791979",
+          "estado": "nuevo"
+        },
+        "git.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/SuperClaude/Commands/git.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 1126,
+          "hash_contenido": "723924d7e9a2abaae8d9723ee99e4c2a",
+          "estado": "nuevo"
+        },
+        "task.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/SuperClaude/Commands/task.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 6529,
+          "hash_contenido": "c683cd151568f8f64d1d230c0ac6e129",
+          "estado": "nuevo"
+        },
+        "design.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/SuperClaude/Commands/design.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 1107,
+          "hash_contenido": "1d147cad6c6ec02cf642c662188072b3",
+          "estado": "nuevo"
+        },
+        "cleanup.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/SuperClaude/Commands/cleanup.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 1147,
+          "hash_contenido": "cbd17b068c890ade708f16b6846dfd74",
+          "estado": "nuevo"
+        },
+        "test.md": {
+          "ruta_completa": "/Users/lr0y/prp-completo-docs/SuperClaude_Framework-master/SuperClaude/Commands/test.md",
+          "fecha_modificacion": "2025-07-18T22:10:17",
+          "tamaño": 1099,
+          "hash_contenido": "9b115845e3246baa622c8a8369fdc665",
+          "estado": "nuevo"
+        }
+      }
+    }
+  },
+  "metricas_calidad": {
+    "consistencia_terminologica_objetivo": 95.0,
+    "consistencia_terminologica_actual": null,
+    "preservacion_estructura_objetivo": 100.0,
+    "preservacion_estructura_actual": null,
+    "funcionalidad_codigo_objetivo": 100.0,
+    "funcionalidad_codigo_actual": null,
+    "velocidad_traduccion_objetivo": 10.0,
+    "velocidad_traduccion_actual": null
+  },
+  "configuracion_sistema": {
+    "glosario_maestro": "configuracion/glosario-maestro.json",
+    "reglas_traduccion": "configuracion/reglas-traduccion.yaml",
+    "herramientas_validacion": [
+      "validador-terminologia.py",
+      "verificador-calidad.py",
+      "sincronizador-versiones.py"
+    ],
+    "modo_operacion": "desarrollo",
+    "auto_sincronizacion": false,
+    "notificaciones_activas": true
+  },
+  "siguiente_accion": {
+    "accion": "sincronizacion_inicial",
+    "descripcion": "Realizar sincronización inicial con repositorios originales",
+    "prioridad": "alta",
+    "estimacion_tiempo": "30 minutos",
+    "responsable": "sistema_automatizado"
+  },
+  "historial_cambios": [
+    {
+      "fecha": "2025-01-19T15:30:00Z",
+      "accion": "inicializacion_sistema",
+      "descripcion": "Inicialización del sistema de traducción",
+      "estado_anterior": null,
+      "estado_nuevo": "sistema_iniciado"
+    }
+  ]
+}

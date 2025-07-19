@@ -1,0 +1,252 @@
+{
+  "metadatos": {
+    "version": "1.0.0",
+    "fecha_creacion": "2025-01-19",
+    "descripcion": "Glosario maestro para traducción PRP Framework al español",
+    "total_terminos": 45,
+    "categorias": ["core", "tecnico", "metodologia", "herramientas", "ui"]
+  },
+  "terminos_core": {
+    "PRP": {
+      "original": "Product Requirement Prompt",
+      "traduccion": "Prompt de Requisitos de Producto",
+      "abreviacion": "PRP",
+      "descripcion": "Metodología que fusiona PRD con inteligencia de código y runbook",
+      "mantener_original": true,
+      "categoria": "core",
+      "contexto": "Framework principal"
+    },
+    "Context Engineering": {
+      "original": "Context Engineering",
+      "traduccion": "Ingeniería de Contexto",
+      "abreviacion": null,
+      "descripcion": "Disciplina de proporcionar contexto completo a asistentes IA",
+      "mantener_original": true,
+      "categoria": "core",
+      "contexto": "Paradigma metodológico"
+    },
+    "MCP": {
+      "original": "Model Context Protocol",
+      "traduccion": "Protocolo de Contexto de Modelo",
+      "abreviacion": "MCP",
+      "descripcion": "Protocolo para servidores que extienden capacidades Claude",
+      "mantener_original": true,
+      "categoria": "core",
+      "contexto": "Protocolo técnico"
+    },
+    "Claude Code": {
+      "original": "Claude Code",
+      "traduccion": "Claude Code",
+      "abreviacion": null,
+      "descripcion": "Herramienta de codificación agéntica de Anthropic",
+      "mantener_original": true,
+      "categoria": "core",
+      "contexto": "Plataforma objetivo"
+    }
+  },
+  "terminos_metodologia": {
+    "Wave System": {
+      "original": "Wave System",
+      "traduccion": "Sistema de Ondas",
+      "abreviacion": null,
+      "descripcion": "Ejecución multi-etapa con inteligencia compuesta",
+      "mantener_original": false,
+      "categoria": "metodologia",
+      "contexto": "SuperClaude orchestration"
+    },
+    "Quality Gates": {
+      "original": "Quality Gates",
+      "traduccion": "Puertas de Calidad",
+      "abreviacion": null,
+      "descripcion": "Puntos de validación en proceso desarrollo",
+      "mantener_original": false,
+      "categoria": "metodologia",
+      "contexto": "Control calidad"
+    },
+    "Auto-activation": {
+      "original": "Auto-activation",
+      "traduccion": "Auto-activación",
+      "abreviacion": null,
+      "descripcion": "Activación automática basada en contexto",
+      "mantener_original": false,
+      "categoria": "metodologia",
+      "contexto": "Sistema personas"
+    },
+    "Prompt Engineering": {
+      "original": "Prompt Engineering",
+      "traduccion": "Ingeniería de Prompts",
+      "abreviacion": null,
+      "descripcion": "Disciplina tradicional de redacción prompts",
+      "mantener_original": false,
+      "categoria": "metodologia",
+      "contexto": "Paradigma anterior"
+    },
+    "Vibe Coding": {
+      "original": "Vibe Coding",
+      "traduccion": "Programación Intuitiva",
+      "abreviacion": null,
+      "descripcion": "Desarrollo sin metodología estructurada",
+      "mantener_original": true,
+      "categoria": "metodologia",
+      "contexto": "Anti-patrón"
+    }
+  },
+  "terminos_tecnicos": {
+    "Slash Commands": {
+      "original": "Slash Commands",
+      "traduccion": "Comandos Slash",
+      "abreviacion": null,
+      "descripcion": "Comandos que inician con / en Claude Code",
+      "mantener_original": false,
+      "categoria": "tecnico",
+      "contexto": "Interface Claude Code"
+    },
+    "Personas": {
+      "original": "Personas",
+      "traduccion": "Personas",
+      "abreviacion": null,
+      "descripcion": "Especialistas IA con comportamientos específicos",
+      "mantener_original": false,
+      "categoria": "tecnico",
+      "contexto": "SuperClaude sistema"
+    },
+    "Headless mode": {
+      "original": "Headless mode",
+      "traduccion": "Modo sin interfaz",
+      "abreviacion": null,
+      "descripcion": "Ejecución automática sin interacción usuario",
+      "mantener_original": false,
+      "categoria": "tecnico",
+      "contexto": "Automatización"
+    },
+    "Thinking flags": {
+      "original": "Thinking flags",
+      "traduccion": "Flags de pensamiento",
+      "abreviacion": null,
+      "descripcion": "Modificadores que controlan profundidad análisis",
+      "mantener_original": false,
+      "categoria": "tecnico",
+      "contexto": "SuperClaude flags"
+    },
+    "Token optimization": {
+      "original": "Token optimization",
+      "traduccion": "Optimización de tokens",
+      "abreviacion": null,
+      "descripcion": "Gestión eficiente uso tokens IA",
+      "mantener_original": false,
+      "categoria": "tecnico",
+      "contexto": "Eficiencia"
+    }
+  },
+  "terminos_herramientas": {
+    "Context7": {
+      "original": "Context7",
+      "traduccion": "Context7",
+      "abreviacion": null,
+      "descripcion": "Servidor MCP para documentación oficial librerías",
+      "mantener_original": true,
+      "categoria": "herramientas",
+      "contexto": "Servidor MCP"
+    },
+    "Sequential": {
+      "original": "Sequential",
+      "traduccion": "Sequential",
+      "abreviacion": null,
+      "descripcion": "Servidor MCP para análisis multi-paso",
+      "mantener_original": true,
+      "categoria": "herramientas",
+      "contexto": "Servidor MCP"
+    },
+    "Magic": {
+      "original": "Magic",
+      "traduccion": "Magic",
+      "abreviacion": null,
+      "descripcion": "Servidor MCP para generación componentes UI",
+      "mantener_original": true,
+      "categoria": "herramientas",
+      "contexto": "Servidor MCP"
+    },
+    "Playwright": {
+      "original": "Playwright",
+      "traduccion": "Playwright",
+      "abreviacion": null,
+      "descripcion": "Servidor MCP para automatización testing E2E",
+      "mantener_original": true,
+      "categoria": "herramientas",
+      "contexto": "Servidor MCP"
+    },
+    "TodoWrite": {
+      "original": "TodoWrite",
+      "traduccion": "TodoWrite",
+      "abreviacion": null,
+      "descripcion": "Herramienta gestión tareas Claude Code",
+      "mantener_original": true,
+      "categoria": "herramientas",
+      "contexto": "Claude Code tools"
+    }
+  },
+  "terminos_ui": {
+    "Quick Start": {
+      "original": "Quick Start",
+      "traduccion": "Inicio Rápido",
+      "abreviacion": null,
+      "descripcion": "Guía iniciación rápida",
+      "mantener_original": false,
+      "categoria": "ui",
+      "contexto": "Documentación usuario"
+    },
+    "Getting Started": {
+      "original": "Getting Started",
+      "traduccion": "Comenzando",
+      "abreviacion": null,
+      "descripcion": "Guía introducción",
+      "mantener_original": false,
+      "categoria": "ui",
+      "contexto": "Documentación usuario"
+    },
+    "Best Practices": {
+      "original": "Best Practices",
+      "traduccion": "Mejores Prácticas",
+      "abreviacion": null,
+      "descripcion": "Recomendaciones optimización",
+      "mantener_original": false,
+      "categoria": "ui",
+      "contexto": "Documentación usuario"
+    },
+    "Troubleshooting": {
+      "original": "Troubleshooting",
+      "traduccion": "Resolución de Problemas",
+      "abreviacion": null,
+      "descripcion": "Guía solución problemas",
+      "mantener_original": false,
+      "categoria": "ui",
+      "contexto": "Documentación usuario"
+    }
+  },
+  "reglas_traduccion": {
+    "mantener_originales": [
+      "PRP", "MCP", "Claude Code", "Context7", "Sequential", "Magic", "Playwright",
+      "TodoWrite", "Vibe Coding", "Context Engineering"
+    ],
+    "traducir_siempre": [
+      "Quick Start", "Getting Started", "Best Practices", "Troubleshooting",
+      "Wave System", "Quality Gates", "Auto-activation"
+    ],
+    "formato_comandos": {
+      "patron": "/comando",
+      "mantener": true,
+      "explicacion": "Los comandos slash mantienen formato original"
+    },
+    "formato_archivos": {
+      "patron": "CLAUDE.md, README.md",
+      "traducir_extension": false,
+      "ejemplo": "README.md -> README-es.md"
+    }
+  },
+  "notas_contextuales": {
+    "adaptacion_cultural": "Adaptar ejemplos a contextos empresariales hispanohablantes",
+    "nivel_tecnico": "Mantener rigor técnico pero explicar conceptos complejos",
+    "publico_objetivo": "Desarrolladores hispanohablantes con experiencia variable en IA",
+    "consistencia": "Usar mismo término para concepto en todo el framework"
+  }
+}

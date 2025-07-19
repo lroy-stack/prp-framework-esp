@@ -1,0 +1,245 @@
+{
+  "metadatos": {
+    "version": "1.0.0",
+    "fecha_creacion": "2025-01-19",
+    "descripcion": "Mapeo de archivos originales a traducidos con metadatos",
+    "total_archivos": 142,
+    "frameworks_incluidos": 3
+  },
+  
+  "configuracion_mapeo": {
+    "convencion_nombres": {
+      "sufijo_traduccion": "-es",
+      "preservar_extension": true,
+      "formato": "{nombre_original}-es.{extension}"
+    },
+    "directorios": {
+      "base_originales": "../",
+      "base_traducidos": "./repositorios/",
+      "estructura_espejo": true
+    }
+  },
+
+  "frameworks": {
+    "context-engineering-intro": {
+      "directorio_original": "../Context-Engineering-Intro/",
+      "directorio_traducido": "./repositorios/context-engineering-intro-esp/",
+      "archivos_criticos": {
+        "README.md": {
+          "destino": "README-es.md",
+          "prioridad": "alta",
+          "complejidad": "media",
+          "dependencias": [],
+          "tiempo_estimado_horas": 3,
+          "requiere_revision_tecnica": true,
+          "tipo_contenido": "documentacion_principal",
+          "terminologia_especializada": ["Context Engineering", "PRP", "Claude Code"]
+        },
+        "CLAUDE.md": {
+          "destino": "CLAUDE-es.md", 
+          "prioridad": "alta",
+          "complejidad": "alta",
+          "dependencias": ["README.md"],
+          "tiempo_estimado_horas": 4,
+          "requiere_revision_tecnica": true,
+          "tipo_contenido": "configuracion_tecnica",
+          "terminologia_especializada": ["TodoWrite", "PLANNING.md", "TASK.md", "pytest"]
+        },
+        "INITIAL.md": {
+          "destino": "INITIAL-es.md",
+          "prioridad": "media",
+          "complejidad": "media", 
+          "dependencias": ["README.md"],
+          "tiempo_estimado_horas": 2,
+          "requiere_revision_tecnica": false,
+          "tipo_contenido": "template_ejemplo",
+          "terminologia_especializada": ["feature request", "PRP workflow"]
+        },
+        "INITIAL_EXAMPLE.md": {
+          "destino": "INITIAL_EXAMPLE-es.md",
+          "prioridad": "baja",
+          "complejidad": "baja",
+          "dependencias": ["INITIAL.md"],
+          "tiempo_estimado_horas": 1,
+          "requiere_revision_tecnica": false,
+          "tipo_contenido": "ejemplo_practico",
+          "terminologia_especializada": []
+        },
+        "PRPs/templates/prp_base.md": {
+          "destino": "PRPs/templates/prp_base-es.md",
+          "prioridad": "alta",
+          "complejidad": "alta",
+          "dependencias": ["README.md", "CLAUDE.md"],
+          "tiempo_estimado_horas": 5,
+          "requiere_revision_tecnica": true,
+          "tipo_contenido": "template_tecnico",
+          "terminologia_especializada": ["PRP", "Context is King", "Validation Loops"]
+        },
+        "PRPs/EXAMPLE_multi_agent_prp.md": {
+          "destino": "PRPs/EXAMPLE_multi_agent_prp-es.md",
+          "prioridad": "media",
+          "complejidad": "alta",
+          "dependencias": ["PRPs/templates/prp_base.md"],
+          "tiempo_estimado_horas": 6,
+          "requiere_revision_tecnica": true,
+          "tipo_contenido": "ejemplo_complejo",
+          "terminologia_especializada": ["Pydantic AI", "Multi-agent", "Gmail API", "Brave Search"]
+        }
+      }
+    },
+
+    "prps-agentic-eng": {
+      "directorio_original": "../PRPs-agentic-eng/",
+      "directorio_traducido": "./repositorios/prps-agentic-eng-esp/",
+      "archivos_criticos": {
+        "README.md": {
+          "destino": "README-es.md",
+          "prioridad": "alta",
+          "complejidad": "media",
+          "dependencias": [],
+          "tiempo_estimado_horas": 4,
+          "requiere_revision_tecnica": true,
+          "tipo_contenido": "documentacion_principal",
+          "terminologia_especializada": ["PRP methodology", "agentic engineering", "Claude Code"]
+        },
+        "CLAUDE.md": {
+          "destino": "CLAUDE-es.md",
+          "prioridad": "alta", 
+          "complejidad": "muy_alta",
+          "dependencias": ["README.md"],
+          "tiempo_estimado_horas": 8,
+          "requiere_revision_tecnica": true,
+          "tipo_contenido": "configuracion_avanzada",
+          "terminologia_especializada": ["28+ comandos", "validation loops", "context is king"]
+        },
+        "PRPs/templates/prp_base.md": {
+          "destino": "PRPs/templates/prp_base-es.md",
+          "prioridad": "alta",
+          "complejidad": "muy_alta",
+          "dependencias": ["CLAUDE.md"],
+          "tiempo_estimado_horas": 10,
+          "requiere_revision_tecnica": true,
+          "tipo_contenido": "template_profesional",
+          "terminologia_especializada": ["Context-Rich", "Validation Loops", "Implementation Blueprint"]
+        },
+        "PRPs/scripts/prp_runner.py": {
+          "destino": "PRPs/scripts/prp_runner-es.py",
+          "prioridad": "media",
+          "complejidad": "alta",
+          "dependencias": ["PRPs/templates/prp_base.md"],
+          "tiempo_estimado_horas": 6,
+          "requiere_revision_tecnica": true,
+          "tipo_contenido": "codigo_documentado",
+          "terminologia_especializada": ["interactive mode", "headless mode", "stream-json"],
+          "notas": "Solo traducir comentarios y docstrings"
+        },
+        "PRPs/ai_docs/cc_overview.md": {
+          "destino": "PRPs/ai_docs/cc_overview-es.md",
+          "prioridad": "alta",
+          "complejidad": "media",
+          "dependencias": [],
+          "tiempo_estimado_horas": 3,
+          "requiere_revision_tecnica": true,
+          "tipo_contenido": "documentacion_referencia",
+          "terminologia_especializada": ["Claude Code", "agentic coding", "terminal"]
+        }
+      }
+    },
+
+    "superclaude-framework": {
+      "directorio_original": "../SuperClaude_Framework-master/",
+      "directorio_traducido": "./repositorios/superclaude-framework-esp/",
+      "archivos_criticos": {
+        "README.md": {
+          "destino": "README-es.md",
+          "prioridad": "alta",
+          "complejidad": "media",
+          "dependencias": [],
+          "tiempo_estimado_horas": 5,
+          "requiere_revision_tecnica": true,
+          "tipo_contenido": "documentacion_framework",
+          "terminologia_especializada": ["SuperClaude v3", "personas", "MCP integration", "slash commands"]
+        },
+        "SuperClaude/Core/CLAUDE.md": {
+          "destino": "SuperClaude/Core/CLAUDE-es.md",
+          "prioridad": "alta",
+          "complejidad": "baja",
+          "dependencias": ["README.md"],
+          "tiempo_estimado_horas": 1,
+          "requiere_revision_tecnica": false,
+          "tipo_contenido": "archivo_referencia",
+          "terminologia_especializada": ["@include references"],
+          "notas": "Archivo de referencias, traducción mínima"
+        },
+        "SuperClaude/Core/COMMANDS.md": {
+          "destino": "SuperClaude/Core/COMMANDS-es.md",
+          "prioridad": "alta",
+          "complejidad": "muy_alta",
+          "dependencias": ["SuperClaude/Core/CLAUDE.md"],
+          "tiempo_estimado_horas": 12,
+          "requiere_revision_tecnica": true,
+          "tipo_contenido": "referencia_tecnica_completa",
+          "terminologia_especializada": ["Wave System", "command execution", "auto-personas", "MCP integration"]
+        },
+        "SuperClaude/Core/PERSONAS.md": {
+          "destino": "SuperClaude/Core/PERSONAS-es.md",
+          "prioridad": "alta", 
+          "complejidad": "alta",
+          "dependencias": ["SuperClaude/Core/COMMANDS.md"],
+          "tiempo_estimado_horas": 8,
+          "requiere_revision_tecnica": true,
+          "tipo_contenido": "especificacion_sistema",
+          "terminologia_especializada": ["architect", "frontend", "backend", "security", "analyzer"]
+        },
+        "Docs/superclaude-user-guide.md": {
+          "destino": "Docs/superclaude-user-guide-es.md",
+          "prioridad": "media",
+          "complejidad": "alta",
+          "dependencias": ["README.md", "SuperClaude/Core/COMMANDS.md"],
+          "tiempo_estimado_horas": 10,
+          "requiere_revision_tecnica": true,
+          "tipo_contenido": "guia_usuario_completa",
+          "terminologia_especializada": ["intelligent routing", "auto-activation", "orchestrator system"]
+        }
+      }
+    }
+  },
+
+  "metricas_estimacion": {
+    "tiempo_total_horas": 102,
+    "archivos_criticos": 16,
+    "complejidad_promedio": "alta",
+    "revision_tecnica_requerida": 14,
+    "dependencias_criticas": 8
+  },
+
+  "reglas_dependencias": {
+    "orden_traduccion": [
+      "documentacion_principal", 
+      "configuracion_tecnica",
+      "templates_tecnicos", 
+      "ejemplos_complejos",
+      "referencia_completa"
+    ],
+    "bloqueos": {
+      "CLAUDE.md": ["depende_de: README.md"],
+      "templates": ["depende_de: CLAUDE.md"], 
+      "ejemplos": ["depende_de: templates"],
+      "guias_usuario": ["depende_de: documentacion_principal"]
+    }
+  },
+
+  "validaciones_requeridas": {
+    "pre_traduccion": [
+      "verificar_archivo_origen_existe",
+      "verificar_dependencias_completadas",
+      "cargar_terminologia_especializada"
+    ],
+    "post_traduccion": [
+      "validar_terminologia_consistente",
+      "verificar_estructura_preservada", 
+      "validar_enlaces_funcionales",
+      "revisar_codigo_intacto"
+    ]
+  }
+}
