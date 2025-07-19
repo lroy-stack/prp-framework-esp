@@ -215,10 +215,10 @@ cat CLAUDE.md         # Guía sistema completa en español
 git clone https://github.com/NomenAK/SuperClaude.git && cd SuperClaude && uv sync && python3 SuperClaude install
 
 # Ejecutar traducciones con PRPs especializados
-/traducir-archivo-execute PRPs/traduccion-context-engineering-intro-completa.md --persona-scribe --think-hard
-/traducir-archivo-execute PRPs/traduccion-prps-agentic-eng-completa.md --persona-scribe --c7
-/traducir-archivo-execute PRPs/traduccion-superclaude-framework-completa.md --persona-architect --seq
-/traducir-archivo-execute PRPs/traduccion-servidor-mcp-completa.md --persona-scribe --ultrathink
+/traducir-archivo-execute PRPs/traduccion-context-engineering-intro-completa --persona-scribe --think-hard
+/traducir-archivo-execute PRPs/traduccion-prps-agentic-eng-completa --persona-scribe --c7
+/traducir-archivo-execute PRPs/traduccion-superclaude-framework-completa --persona-architect --seq
+/traducir-archivo-execute PRPs/traduccion-servidor-mcp-completa --persona-scribe --ultrathink
 
 # Validar calidad y terminología
 /validar-terminologia --directorio repositorios/[framework]/ --persona-qa
